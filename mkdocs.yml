@@ -1,0 +1,12 @@
+site_name: Razuna Documentation
+theme: readthedocs
+repo_url: https://github.com/razuna/razuna
+repo_name: Github
+pages: 
+- Home : 'index.md'
+- User Guide : 'user_index.md'
+- Admin Guide : 'admin_index.md'
+- API Guide : 'api_index.md'
+- Installation Guide : 'installation.md'
+- About : 'about.md'
+
