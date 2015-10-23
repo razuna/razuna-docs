@@ -4,9 +4,9 @@ repo_url: https://github.com/razuna/razuna
 repo_name: Github
 pages: 
 - Home : 'index.md'
-- User Guide : 'user_index.md'
-- Admin Guide : 'admin_index.md'
-- API Guide : 'api_index.md'
-- Installation Guide : 'installation.md'
-- About : 'about.md'
+- User Guide : 'user/index.md'
+- Admin Guide : 'admin/index.md'
+- API Guide : 'api/index.md'
+- Installation Guide : 'installation/index.md'
+- About : 'about/index.md'
 
