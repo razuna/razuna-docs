@@ -19,9 +19,11 @@ pages:
   - MacOs X: 'installation/macosx.md'
   - Deploy on Virtual Machines: 'installation/vms.md'
   - Deploy on AWS (Amazon): 'installation/aws.md'
+  - Use front-end server: 'installation/nginxapache.md'
   - Upgrade Razuna: 'installation/upgrade.md'
 - User Guide : 'user/index.md'
-- Admin Guide : 'admin/index.md'
+- Admin Guide: 
+  - Setting up Users : 'admin/users.md'
 - Developer Guide:
   - API Guide : 'api/index.md'
   - Plugin Guide : 'plugins/index.md'
