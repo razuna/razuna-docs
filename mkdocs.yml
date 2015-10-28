@@ -2,11 +2,17 @@ site_name: Razuna Documentation
 theme: readthedocs
 repo_url: https://github.com/razuna/razuna
 repo_name: Github
+markdown_extensions:
+    - smarty
+    - toc
 pages: 
 - Home : 'index.md'
+- Installation Guide : 'installation/index.md'
 - User Guide : 'user/index.md'
 - Admin Guide : 'admin/index.md'
-- API Guide : 'api/index.md'
-- Installation Guide : 'installation/index.md'
-- About : 'about/index.md'
+- Developer Guide:
+  - API Guide : 'api/index.md'
+  - Plugin Guide : 'plugins/index.md'
+- About: 'about/index.md'
+
 
