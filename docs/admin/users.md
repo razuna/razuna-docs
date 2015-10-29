@@ -12,4 +12,4 @@ From the windows of Razuna DAM , you can click into your username from the right
 
 Please see images as below :
 
-![alt-text](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=4D61D1131A2D40038F0747BFC3567480&v=o "Administration")
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=4D61D1131A2D40038F0747BFC3567480&v=o)
