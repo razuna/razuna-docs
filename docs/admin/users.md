@@ -18,5 +18,13 @@ As you can see on the image below , it shows the total number of the users on th
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=092DBD1E90F5422B893615A282A7CAA2&v=o)
 
-The search account feature will be used for finding the accounts which you want to be listed as you want to show. You can use username , email or company name to fill in the textbox and click Search button to finish.
+The search user feature will be used for finding the users which you want to be listed. You can use username , email or company name to fill in the textbox and click into Search button to finish.
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=F05EE6CF98464EED92ACB8454995C715&v=o)
+
+For adding an user , we just click to Add User link and the new windows will prompt on the screen. Please fill in the necessary information to the form and after that we can set username into group name to set the access right for each user. And click Save to complete.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=F2A16E8DC1EE434F9D5D6A44F7CB9927&v=o)
+
+Add user to groups :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=E7CA00C379524F46948EE2480F62BD93&v=o)
