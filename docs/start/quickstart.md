@@ -26,5 +26,12 @@ If you want to send some of files by email or transfer it by FTP service or down
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=A4829B3A3E7F4FF38CC710F326205610&v=o)
 
+After you put the data to basket , Please click to "Show Basket" link from the menu on top to show the data in Basket.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=7DD0A261DD7D4ED492AC44EA9514BC1E&v=o)
+
+From the Basket , user can download all the files in a zip file to local machine. Or "Save and Publish Basket" function will help you to Save basket content as a Zip , Save basket content as a Collection or Save basket content into a existing Collection. Please see the image as below :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=295607F3675444869D89AA438C6981D1&v=o)
 
 
