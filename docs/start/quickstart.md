@@ -20,3 +20,11 @@ Please click to "Advanced Search" from Menu on top. The new windows of Advanced 
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=986E0D640CC344F1A77F070025616883&v=o)
 
+Show Basket Feature :
+
+If you want to send some of files by email or transfer it by FTP service or download them in one moment. We can help you by "Show Basket" feature. All you can do is just click into "Put in basket" icon from the files in your folders or also your collections which you want to move them into basket for process.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=A4829B3A3E7F4FF38CC710F326205610&v=o)
+
+
+
