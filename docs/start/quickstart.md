@@ -52,3 +52,7 @@ Export Metadata :
 This function help you to export the metadata (Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.) of your data to a format likes :  XLS , XLSX or CSV file. You just need to choose the format and click to export button to finish.
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=D5C9D9B167A2457BAE5A25FA9DB98036&v=o)
+
+Remove Basket :
+
+When user click this button , all the files in Basket will be clear from Basket.
