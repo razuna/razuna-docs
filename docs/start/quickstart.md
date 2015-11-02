@@ -30,8 +30,12 @@ After you put the data to basket , Please click to "Show Basket" link from the m
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=7DD0A261DD7D4ED492AC44EA9514BC1E&v=o)
 
-From the Basket , user can download all the files in a zip file to local machine. Or "Save and Publish Basket" function will help you to Save basket content as a Zip , Save basket content as a Collection or Save basket content into a existing Collection. Please see the image as below :
+From the Basket , user can download all the files in a zip file to local machine. Or "Save and Publish Basket" function will help you to Save basket content as a Zip , Save basket content as a Collection or Save basket content into a existing Collection. We provided some flexible choices for user when using our system. Please see the image as below :
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=295607F3675444869D89AA438C6981D1&v=o)
 
+Email Basket : 
 
+From here , you can send data from the basket by email composer in easy way and comfortable.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=360DA4625AB14E3383C6398568694352&v=o)
