@@ -23,7 +23,8 @@ pages:
   - Upgrade Razuna: 'installation/upgrade.md'
 - User Guide : 'user/index.md'
 - Admin Guide: 
-  - Setting up Users : 'admin/users.md'
+  - Setting up Users : 'admin/users.md' 
+  - Setting Groups :  'admin/groups.md'
 - Developer Guide:
   - API Guide : 'api/index.md'
   - Plugin Guide : 'plugins/index.md'
