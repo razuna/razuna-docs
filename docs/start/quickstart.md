@@ -45,3 +45,10 @@ FTP Basket :
 Our system also support user through FTP service , you can click into FTP Basket and input FTP server address , username and password to get the authentication from FTP service and allow to transfer the data from Razuna.
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=2F0D2B8945E94F83BB42CEF390802864&v=o)
+
+
+Export Metadata :
+
+This function help you to export the metadata (Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.) of your data to a format likes :  XLS , XLSX or CSV file. You just need to choose the format and click to export button to finish.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=D5C9D9B167A2457BAE5A25FA9DB98036&v=o)
