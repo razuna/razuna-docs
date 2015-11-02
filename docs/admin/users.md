@@ -28,3 +28,17 @@ For adding an user , we just click to Add User link and the new windows will pro
 Add user to groups :
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=E7CA00C379524F46948EE2480F62BD93&v=o)
+
+Razuna DAM also support for users social accounts to login such as : Facebook , Twitter , Google , etc...
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=756142D89D2742A68460B9EC6AA19271&v=o)
+
+Our system support for import and export user databse with :
+
+Import Feature :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=08CDEE1389B44AEC800E16FF614012A3&v=o)
+
+Export Feature :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=C1433C0F0FAC4FE1ACE8D7C130714547&v=o)
