@@ -104,3 +104,18 @@ Finally , you can see your files showing on Razuna system now.
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=3ADA364B1F0A45C99B52D89E1E04A9A2&v=o)
 ___
 
+* Add assets from Server :
+
+For adding files from Server , all you can do is enter the corrected path to Razuna system , then checking it with Validate button to make sure the path you were entered is correct and click to Import from path to add assets from Server to Razuna System.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=C0DFDB14366B45F5938E24CBB8953701&v=o)
+___
+
+* Add assets from FTP :
+
+Please enter your FTP access information to be able to retrieve and store file from the FTP site in your system such as :
+
+FTP server , Username , Password then Click into "Login to FTP site" button to finish.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=DDF9E24F624A4B00B78AFC530D94735F&v=o)
+___
