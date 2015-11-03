@@ -1,4 +1,4 @@
-##### Quick Start with Razuna System
+# Quick Start with Razuna System
 
 #### Welcome to Razuna System. In this page , we will show you how to use our system to manage the data in smoothly.
 
@@ -56,3 +56,9 @@ This function help you to export the metadata (Metadata summarizes basic informa
 Remove Basket :
 
 When user click this button , all the files in Basket will be clear from Basket.
+
+### Manage Function :
+
+From this part , users are able to create a new folder on the current level , reload the tree folder in the case if you are missing something this might help but usually not needed , Show folders from all users used to show the personal folders of your users.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=09A946319142475DB0A0C69ED0FB0F8B&v=o)
