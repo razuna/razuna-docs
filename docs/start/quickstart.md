@@ -119,3 +119,13 @@ FTP server , Username , Password then Click into "Login to FTP site" button to f
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=DDF9E24F624A4B00B78AFC530D94735F&v=o)
 ___
+
+* Link to content :
+
+If you do not want to import your asset into Razuna and simply want to link to it, then add the absolute path to the asset below or enter the URL to the asset (can be on Facebook, YouTube or just about any URL that is publicly available).
+
+Local content (on your local network) can be indexed and also converted as usual, but will not be moved to the internal Razuna structure.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=7CBC886AA17444448354AC105597C4E2&v=o)
+
+___
