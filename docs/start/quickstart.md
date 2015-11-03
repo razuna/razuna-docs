@@ -91,6 +91,13 @@ From your current folder on the left side, click into it and the contents in you
 
 To add assets , please click into "Add your Files" button and the new window appear for browse the files which you want to upload from local machine.
 
-From this window , users click into "Add files" to browse the local files for upload and then click to "Start upload" button to load the file to Razuna System.
+In this window , users click into "Add files" to browse the local files for upload and then click to "Start upload" button to load the file to Razuna System.
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=53BD075E0233419596DBE06C79E3E9D8&v=o)
+
+After uploading task completed , one more new window appears to require users input the metadata such as : Description , Label , Our Own Custom Field for the files which you have upload to Razuna system then click "Update Files" button to finish.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=31D198A2F20541DDBF9577B82A609232&v=o)
+
+Finally , you can see your files showing on Razuna system now.
+
