@@ -83,7 +83,7 @@ ___
 
 ### How to add assets to Razuna
 
-* Add assets to Razuna :
+* Add assets from local machine :
 
 From your current folder on the left side, click into it and the contents in your folder will be show in main page. 
 
@@ -100,4 +100,7 @@ After uploading task completed , one more new window appears to require users in
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=31D198A2F20541DDBF9577B82A609232&v=o)
 
 Finally , you can see your files showing on Razuna system now.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=3ADA364B1F0A45C99B52D89E1E04A9A2&v=o)
+___
 
