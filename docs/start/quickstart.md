@@ -20,7 +20,7 @@ Please click to "Advanced Search" from Menu on top. The new windows of Advanced 
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=986E0D640CC344F1A77F070025616883&v=o)
 ___
-Show Basket Feature :
+### Show Basket Feature :
 
 If you want to send some of files by email or transfer it by FTP service or download them in one moment. We can help you by "Show Basket" feature. All you can do is just click into "Put in basket" icon from the files in your folders or also your collections which you want to move them into basket for process.
 
@@ -80,3 +80,17 @@ Reload the folder tree (usually not needed but if you are missing something this
 * Show folder from all users :
 Users can click to this part to show the personal folders of your users.
 ___
+
+### How to add assets to Razuna
+
+* Add assets to Razuna :
+
+From your current folder on the left side, click into it and the contents in your folder will be show in main page. 
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=CB81B9F2B913431EBC9B3D7035AC9213&v=o)
+
+To add assets , please click into "Add your Files" button and the new window appear for browse the files which you want to upload from local machine.
+
+From this window , users click into "Add files" to browse the local files for upload and then click to "Start upload" button to load the file to Razuna System.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=53BD075E0233419596DBE06C79E3E9D8&v=o)
