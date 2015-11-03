@@ -73,3 +73,10 @@ After fill in step , we contine to set the permissions of folder for groups can 
 Finally we click Add button locate at bottom of dialog to finish.
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=70953A66B4884511BCD8AFBC7CFAF455&v=o)
+
+* Reload :
+Reload the folder tree (usually not needed but if you are missing something this might help).
+
+* Show folder from all users :
+Users can click to this part to show the personal folders of your users.
+___
