@@ -171,3 +171,44 @@ User can change the type of views from "Thumbnail View" to "List View" or "Quick
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=0B51CB5CFA9F4F35830D38A7823A5B62&v=o)
 
 ___
+
+### Manage Folder :
+
+There are 2 options for user want to set the "Folder subscribe" and "Folder Sharing & Settings" at the Manage Folder Menu.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=384270438B8549E9845185D045C1B46A&v=o)
+
+* Folder subscribe :
+
+Subscribe to changes in folder (and its subfolders) which will be emailed to you on specifed interval.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=77A736D216CD4362A011A2465E989E13&v=o)
+
+* Folder Sharing & Settings :
+
+Folder Settings :
+
+In this option , Razuna system allow user do setup the properties for current folder such as : Folder name , Description , Label , Permission for groups can be access to this folder , Apply workflow to files in this folder.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=5F43A0C089864DA3AA405303F3FA8593&v=o)
+
+Sharing Options : 
+
+The sharing options will be used when you share a folder all files are accessible with the same group permissions. 
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=3CF6053DEBB2479FADAD1C1F7616F89F&v=o)
+
+Widgets :
+
+Widgets allow you to embed the assets in this folder/collection into any other web application, say a blog, CMS or alike.
+
+You can create as many widgets you like, each with their own settings.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=6664793300534F9CADEE1F58B973986C&v=o)
+
+Thumbnail :
+
+Choose Folder Thumbnail
+By default the system shows a folder image for each folder. If you instead want to show your own thumbnails as the folder image, you can upload one here or choose from any existing image in this folder.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=D9DB5FDE8C9D4D55B5AE9A7340D47118&v=o)
