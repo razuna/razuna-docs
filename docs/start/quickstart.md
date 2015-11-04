@@ -129,3 +129,45 @@ Local content (on your local network) can be indexed and also converted as usual
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=7CBC886AA17444448354AC105597C4E2&v=o)
 
 ___
+
+### Menu actions in your current folder :
+
+Our system have a Menu actions inside your current folder which you will see when open it from the image as below :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=1B83CB928ED14836B8C0D7CE649A714F&v=o)
+
+* Select All : 
+
+This action will allow user select all the data from the current folder for many purposes such as : Put in Basket , Create Alias , Move , Batch , Add to Existing Collection , Export Metadata or Change the Views (Thumbnail View , List View , Quick Edit View).
+
+Or if you want to cancel the "Select All" action you can click into "Deselect All".
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=5C887F09A8A4463F8128643735214FEF&v=o)
+
+___
+
+* Search within folder :
+
+In the case you have many files in your current folder and want to get it quickly so you can use "Search within folder" option. This option allow you filter data follow the format such as : Documents , Images , Videos and Audios or All Assets.
+
+User just need enter the information related to the files likes : File name , Description , Label , Metadat.. etc.. and click "Find" to searching your data.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=1A310DEAA4FB4F0789D0A4D77E69A382&v=o)
+
+___
+
+* More actions :
+
+These actions allow user perform the tasks such as : Add Folder , Add Folder to favourites , Show assets from sub folder , Print , Rss Feed of this folder , Create a Word Document , Export Metadata , Import Metadata , Download assets in this folder.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=5DC7D5CEFD8846C193F6241C5436C9F9&v=o)
+
+___
+
+* Views :
+
+User can change the type of views from "Thumbnail View" to "List View" or "Quick Edit View"
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=0B51CB5CFA9F4F35830D38A7823A5B62&v=o)
+
+___
