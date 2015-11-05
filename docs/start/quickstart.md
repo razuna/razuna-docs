@@ -18,7 +18,8 @@ The "Advanced Search" allow us to find the file by criteria follow file format s
 
 Please click to "Advanced Search" from Menu on top. The new windows of Advanced Search will appear for searching. After key in full the information for search, please click into "Find" button to continue.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=986E0D640CC344F1A77F070025616883&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=552A99E6B2374DEA9AD926D6BD7180E1&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=79CDB8FCA0704310AADE03A4FE9283D4&v=o)
 ___
 ### Show Basket Feature :
 
@@ -152,7 +153,8 @@ In the case you have many files in your current folder and want to get it quickl
 
 User just need enter the information related to the files likes : File name , Description , Label , Metadat.. etc.. and click "Find" to searching your data.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=1A310DEAA4FB4F0789D0A4D77E69A382&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=13E1B9884E174861A93DA15199DA6887&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=ACFC850E05214954AB69B97B7F42D53D&v=o)
 
 ___
 
@@ -190,7 +192,8 @@ Folder Settings :
 
 In this option , Razuna system allow user do setup the properties for current folder such as : Folder name , Description , Label , Permission for groups can be access to this folder , Apply workflow to files in this folder.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=5F43A0C089864DA3AA405303F3FA8593&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=498033488DF24906907CDBC23B0FC53E&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=CB5AB0BA15C24FF28DE38BFC35D53385&v=o)
 
 Sharing Options : 
 
@@ -265,3 +268,43 @@ This Tag is used by for comment to the file to marking or taking note to remembe
 
 ___
 
+"Versions Tag" :
+
+In this section , user have 2 options for versions of assets.
+
+* Upload new version :
+You can replace the current original asset with a new one by choosing the file below and upload it. The current version will be saved as a version and replaced by the new asset.
+
+* Upload old version
+Uploaded new assets will be added as old versions, current original asset do not get replaced.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=F3D3748BCC204D618FF28872CC22A7BC&v=o)
+
+___
+
+"Sharing Options Tag" :
+
+Sharing Options are settings to sharing assets in the current folder. Users are able to set the file sharing options with 3 choices for each type of an asset : Downloadable , Orderable , Selected* (* Selected is valid when you use a widget. The selected asset is then used for the larger preview or for the slideshow.)
+
+Users also can customize the sharing options and override these settings.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=2CA9C1AC19B94ABD89768DB5E3F36D43&v=o)
+
+___
+
+"History Tag" :
+
+History is used for showing of the log of file such as : Created Date , Created Time , Description , Action , Type of file , User.
+
+You can see or tracking the time when a file added to Razuna system and the time it was converted to other formats included its resolution information , and user who done it. 
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=D5E6270036A34460898B8B069415BE83&v=o)
+
+___
+
+"Assocciated Collections Tag"
+
+One asset can be located in many collections from a system. If users want to know how many collections where storing the common file so we can use this function to check the number collections which the file is associated with.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=525E00B20BCB4169B6523F497D67CD92&v=o)
+___
