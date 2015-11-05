@@ -172,7 +172,7 @@ User can change the type of views from "Thumbnail View" to "List View" or "Quick
 
 ___
 
-### Manage Folder :
+### Folder Management :
 
 There are 2 options for user want to set the "Folder subscribe" and "Folder Sharing & Settings" at the Manage Folder Menu.
 
@@ -212,3 +212,38 @@ Choose Folder Thumbnail
 By default the system shows a folder image for each folder. If you instead want to show your own thumbnails as the folder image, you can upload one here or choose from any existing image in this folder.
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=D9DB5FDE8C9D4D55B5AE9A7340D47118&v=o)
+
+___
+
+### File Management :
+
+When user want to change some information of their files or edit something , user just need click into any file in their current folder and the new file management window will appear.
+
+For example , just see the image as below :
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=43549048F87E4A96ADA8B63107F70D3E&v=o)
+
+From the sample image above , you can see the content of File Management is showing the tags including : Information , Renditions , Metadata , Comments , Versions , Sharing Options , History , Associated Collections.
+
+____
+At "Information Tag" : 
+
+User can modify the file's information likes : Filename , Description , Keywords , Labels , Expiry date. Also you can see the File size , Date added , Last modified , Located in (Folder name) , Created by (user) , ID.
+
+Beside the showing information task , we also build an action menu at "Information Tag" with several functions such as :
+
+Put in Basket , Send via Email , Upload to FTP server , Print details , Add to Existing Collection , Move file , Move file to trash.
+
+___
+
+"Rendition Tag" :
+
+This function will allow users to change the resolution of your image or video files and get the direct link from the preview or original file.
+
+You can modify the resolution of files from pixel to dpi or do the opposite , or choose the suitable format files for your purpose.
+
+After set the resolution , you click to "Convert" button to get the new resolution then you can get the direct link or get the file to local machine as well.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=2E727712345C43CDBFE54B93FE1E8BB1&v=o)
+
+___
