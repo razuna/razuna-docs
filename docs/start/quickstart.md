@@ -247,3 +247,21 @@ After set the resolution , you click to "Convert" button to get the new resoluti
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=2E727712345C43CDBFE54B93FE1E8BB1&v=o)
 
 ___
+
+"Metadata Tag" :
+
+The Metadata Tag provide for user many of metadata standards to input such as : IPTC , XMP or Custom Metadata for process. In addition , you can copy the metadata content from this part.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=385FACFE99324ECB8F85AA5A994A3178&v=o)
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=13413EA123D447098CE6F5FCA104743D&v=o)
+
+___
+
+"Comments Tag" :
+
+This Tag is used by for comment to the file to marking or taking note to remember the date , tasks or anything they want.
+
+![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=DF5B6794BE1045C59EFBBBC3BB5B9F2F&v=o)
+
+___
+
