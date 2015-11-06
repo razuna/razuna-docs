@@ -25,6 +25,11 @@ pages:
 - Admin Guide: 
   - Setting up Users : 'admin/users.md' 
   - Setting Groups :  'admin/groups.md'
+  - Custom Fields : 'admin/custom fields.md'
+  - Labels : 'admin/labels.md'
+  - Scheduled Tasks : 'admin/Scheduled Tasks.md'
+  - Rendition Templates : 'admin/Rendition templates.md'
+  - Import Templates : 'admin/Import Templates.md'
 - Developer Guide:
   - API Guide : 'api/index.md'
   - Plugin Guide : 'plugins/index.md'
