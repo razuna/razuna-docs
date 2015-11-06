@@ -10,6 +10,8 @@ A new window appear to allow you setup the new (Name , Description) template :
 
 ![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=0309D1EE426D44B08AD44F684D2FEC3A&v=o)
 
+___
+
  Images Rendition Settings :
 
 Choose the format you want your assets to be converted to while your users will add them to the system.
