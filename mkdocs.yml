@@ -38,6 +38,7 @@ pages:
   - Customization : 'admin/Customization.md'
   - Email Setup : 'admin/Email Setup.md'
   - Service Accounts : 'admin/Service Accounts.md'
+  - Access Control : 'admin/Access Control.md'
   - Plugins : 'admin/Plugins.md'
   - LDAP Services : 'admin/LDAP Services.md'
   - White-Labelling : 'admin/White-Labelling.md'
