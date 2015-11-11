@@ -1,7 +1,8 @@
-# User Guide
 
-A user guide or user's guide, also commonly known as a manual, is a technical communication document intended to give assistance to people using a particular system.
-___
+
+# Quick Start with Razuna System
+
+We think working with Razuna is straight forward and does not need much explanation. But we understand that some people might need a full documentation and while we are are hard at work with bringing you more user guides on how to work with Razuna we invite you to watch the below video tour that shows you the basics about Razuna.
 
 Welcome to Razuna System. In this page , we will show you how to use our system to manage the data in smoothly.
 
