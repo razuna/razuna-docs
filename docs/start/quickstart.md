@@ -199,6 +199,8 @@ The sharing options will be used when you share a folder all files are accessibl
 
 ![](img/Sharing_options12.jpg)
 
+___
+
 Widgets :
 
 Widgets allow you to embed the assets in this folder/collection into any other web application, say a blog, CMS or alike.
@@ -206,6 +208,8 @@ Widgets allow you to embed the assets in this folder/collection into any other w
 You can create as many widgets you like, each with their own settings.
 
 ![](img/widget.jpg)
+
+___
 
 Thumbnail :
 
