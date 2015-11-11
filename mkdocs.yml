@@ -21,7 +21,7 @@ pages:
   - Deploy on AWS (Amazon): 'installation/aws.md'
   - Use front-end server: 'installation/nginxapache.md'
   - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
+- User Guide : 'user/User Guide.md'
 - Admin Guide: 
   - Setting up Users : 'admin/users.md' 
   - Setting Groups :  'admin/groups.md'
