@@ -6,7 +6,7 @@ User just click to "New Scheduled Task" to create new Task. From this image as b
 
  - "Log" function is used to showing the Action (Insert) , Description (Status of Task) , Date and Time of Task action.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=8829B876490A447482C1288A83B11121&v=o)
+![](img/Log_scheduled_task.jpg)
 
  - Action :
 
@@ -14,9 +14,9 @@ User just click to "New Scheduled Task" to create new Task. From this image as b
 
  * The Recycle Bin icon is used for delele the task.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=6974A5DE220B41BCADB2C4784CD9375B&v=o)
+![](img/scheduled_task1.jpg)
 
 And the New Task Form will appears , Please enter the Task name and Method (FTP connection) , Choose Location , Date - Time , Rendition Templates... and click Save to finish.
 
-![](http://demo.padma.razuna.org/index.cfm?fa=c.serve_file&type=img&file_id=39CA79D9797441BAB335311D4CFB1CC4&v=o)
+![](img/scheduled_task2.jpg)
 
