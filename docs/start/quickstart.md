@@ -1,6 +1,10 @@
+
+
 # Quick Start with Razuna System
 
- Welcome to Razuna System. In this page , we will show you how to use our system to manage the data in smoothly.
+We think working with Razuna is straight forward and does not need much explanation. But we understand that some people might need a full documentation and while we are are hard at work with bringing you more user guides on how to work with Razuna we invite you to watch the below video tour that shows you the basics about Razuna.
+
+Welcome to Razuna System. In this page , we will show you how to use our system to manage the data in smoothly.
 
 Firstly user can login to system by account (username and password) which provided by System Admin or by Social accounts.
 
