@@ -42,15 +42,15 @@ You can search any field by typing the field name followed by a colon ":" and th
 
 Here are some fields that the Razuna index contains that you can search within:
 
-id : Unique id of asset
-filename : The current filename of the asset
-filenameorg : The original filename the asset was uploaded with
-keywords : Keywords associated with asset
-description : Description associated with asset
-rawmetadata : The metadata for the asset
-extension : Filename extension of asset
-labels : Labels associated with asset
-customfieldvalue : Values in user created custom fields
+* id : Unique id of asset
+* filename : The current filename of the asset
+* filenameorg : The original filename the asset was uploaded with
+* keywords : Keywords associated with asset
+* description : Description associated with asset
+* rawmetadata : The metadata for the asset
+* extension : Filename extension of asset
+* labels : Labels associated with asset
+* customfieldvalue : Values in user created custom fields
 
 If you want to find assets that have "razuna" in the "filename", you can enter:
 ```
