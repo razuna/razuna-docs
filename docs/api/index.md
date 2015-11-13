@@ -915,7 +915,7 @@ ___
 
 **Get PDF Images Information**
 
-Method*
+*Method*
 
 |Method name|Returns|
 |-----------|-------|
@@ -956,6 +956,10 @@ Method*
 {"COLUMNS":["responsecode","message"],"DATA":[["1","Asset with the given assetid could not be found. Please check assetid and try again."]]}
 
 ```
+___
+
+###Folder API
+
 
 	
 
