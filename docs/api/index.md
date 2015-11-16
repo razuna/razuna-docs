@@ -960,41 +960,1012 @@ ___
 
 ###Folder API
 
+**Get a list of folders**
+
+This method will return a list of folders on ONE level. To iterate for subfolders you will need to call this method each time.
+	
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getfolders|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid api key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|folderid|The ID of the folder you want to retrieve assets from.|Numeric|no|0 = all folders on the root level|
+|collectionfolder|If this is a collection folder|String|no|true ; false|
+
+*Output Value*
+
+|Name|Description|Sample Output|Note|
+|----|-----------|-------------|----|
+|folder_id|ID of folder|2||
+|folder_name|Name of folder|Demo Folder||
+|folder_owner|ID of user that owns the folder|0CA09066-05AA-4B22-B33C1CC6EED10F3E||
+|username|Name of user that owns the folder|John||
+|hassubfolders|Folder contains sub-folder|true or false||
+|folder_description|Folder description|Upload folder|Razuna 1.5.5 (hosted edition 12.11.2012)|
+|totalassets|Total of all assets in this folder. Only populated if not a collection folder.|8|Razuna 1.3.5|
+|totalimg|Total of all assets in this folder. Only populated if not a collection folder.|5|Razuna 1.3.5|
+|totalvid|Total of all assets in this folder. Only populated if not a collection folder.|2|Razuna 1.3.5|
+|totaldoc|Total of all assets in this folder. Only populated if not a collection folder.|1|Razuna 1.3.5|
+|totalaud|Total of all assets in this folder. Only populated if not a collection folder.|3|Razuna 1.3.5|
+|howmanycollections|Number of collections in collection folder. Only populated if this is a collection folder.|1||
+
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=getfolders&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+```
+
+*Sample Output*
+
+```
+{"columns":["folder_id","folder_name","folder_owner","username","hassubfolders","folder_description","totalassets","totalimg","totalvid","totaldoc","totalaud","howmanycollections"],"data":
+[["E6EA9B014E6046EAA3F4390E3ED77791","Demo","1","admin","true","Contains images only",170,0,0,0,0,1]]}
+```
+
+> **Output format :** 
+> *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+	
+___
+
+**Retrieving all assets in a folder**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getassets|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api key|A valid api key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|folderid|The ID of the folder you want to retrieve assets from.|String|yes|1|
+|showsubfolders|To include assets from subfolders as well.|String|no|true ; false (default)|
+|show|What kind of assets to show|String|no|all = All assets (default) img = Images only vid = Videos only doc = Documents only aud = Audios only|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|totalassetscount|How many assets are in this folder|8|
+|calledwith|The folderid you passed to this method|1|
+|listassets|The body node of the returned list of assets||
+|assets|For each asset an asset node is returned with information of the asset|see sample output|
+
+> **Updates :**
+> *As of Razuna 1.5.5 (hosted edition since 16.12.2012) the search also returns the collection id(s) the file might be in in the column "colid"*
+	
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=getassets&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&folderid=1
+```
+
+*Sample Output*
+
+```
+{"columns":["id","filename","folder_id","extension","video_image","filename_org","kind","extension_thumb","size","width","height","description","keywords","path_to_asset","cloud_url","cloud_url_org","subassets","local_url_org","local_url_thumb","responsecode","totalassetscount","calledwith"],"data":[["5E2EB2A833C542748E314DF54AF169BD","Rodnse.jpg","33D207AF29D1447E931A8210982FC4A3","jpg","dummy","Rodnse.jpg","img","jpg","53134",412,569,"This
+ is a demo","contains german u,another a in
+here","33D207AF29D1447E931A8210982FC4A3/img/5E2EB2A833C542748E314DF54AF169BD","","","false","http://razunabd.local:8080//assets/1/33D207AF29D1447E931A8210982FC4A3/img/5E2EB2A833C542748E314DF54AF169BD/Rodnse.jpg","http://razunabd.local:8080//assets/1/33D207AF29D1447E931A8210982FC4A3/img/5E2EB2A833C542748E314DF54AF169BD/thumb_5E2EB2A833C542748E314DF54AF169BD.jpg","0",1,"33D207AF29D1447E931A8210982FC4A3"]]}
+
+```
+Error rendering macro 'excerpt-include' : null
+___
+
+**Get Folder Information**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getfolder|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid api_key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943||
+|folderid|The ID of the folder you want to retrieve information for|String|yes*|1|Either folderid and/or foldername must be provided.Available from Razuna version 1.6.6 onwards.|
+|foldername|Full or partial name of the folder(s) you wish to retrieve information for.All folders matching the folder name criterion will be returned.|String|yes*|pictures|Either folderid and/or foldername must be provided.Available from Razuna version 1.6.6 onwards.| 
+
+*Output Value*
+
+|Name|Description|Sample Output|Note|
+|----|-----------|-------------|----|	
+|folder_id|The folderid you passed to this method|1||
+|folder_related_to|To which folder this folder is related to|if this is the root folder it will be the same ID as the folder id||
+|folder_name|Name of this folder|Renderings||
+|folder_description|Folder description|Upload folder|Razuna 1.5.5 (hosted edition 12.11.2012)|
+|folder_shared|Depicts whether folder is shared or not|true|Available from Razuna version 1.6.6 onwards.|
+|group_permission|An array of groups and related permissions for folder. Groupid '0' is the 'Everybody' group.|[["73CCC1DB-C9A2-445A-B0F3CE28F8780B02","X"],["FDE74B74-D5F5-40F3-A9731BC28D14BB1D","W"],["0","R"]].|Available from Razuna version 1.6.6 onwards. |
+|totalassets|Total of all assets in this folder|8||
+|totalimg|Total of all assets in this folder|5||
+|totalvid|Total of all assets in this folder|2||	
+|totaldoc|Total of all assets in this folder|1||
+|totalaud|Total of all assets in this folder|3||
+
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=getfolder&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&folderid=1
+```
+
+*Sample Output*
+
+```
+{"columns":["folder_id","folder_related_to","folder_name","totalassets","totalimg","totalvid","totaldoc","totalaud"],"data":[["33D207AF29D1447E931A8210982FC4A3","F08BA46F773647899999E80D2B52EC2C","Demo Folder",170,150,10,10,0]]} 
+```
+
+Error rendering macro 'excerpt-include' : null
+
+___
+
+**Create Folder**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|setfolder|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid api_key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|folder_name|Name of folder|String|yes|Test Folder|
+|folder_owner|The user id that this folder belongs to. If left blank then the current user is the owner.|String|no|(if not passed uses the current user id)|
+|folder_related|The ID of the related folder. Important if you create a folder in a sublevel.|String|no|1|
+|folder_collection|Is this folder a collection folder|String|no|true ; false (default)|
+|folder_description|Description of folder|String|no|This folder is created with the API|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|Response|A result code with the status of the login. If the result is 0 the method was successful.|0|
+|folder_id|The ID of the created folder|1|
+
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=setfolder&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&folder_name=Test Folder
+```
+
+*Sample Output*	
+
+```
+{["ResponseCode":"0","folder_id":"1"]} 
+```
+___
+
+**Delete Folder**
+
+> *This method will remove the folder, any sub-folders and content within! There is no way to redo this action !*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|removefolder|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid api key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|folder_id|Name of folder|String|yes|454329579845097425097|	
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|Response|A result code with the status of the login. If the result is 0 the method was successful.|0|
+|Message|Message|Folder and content has been successfully removed!|
+
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=removefolder&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&folder_id=948792317459725198
+```	
+
+*Sample Output*
+
+```
+{["ResponseCode":"0","message":"Folder and all content within has been successfully removed."]}
+```
+___
+
+**Set folder permissions**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|setFolderPermissions|String|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|permissions|JSON Structure|String|yes|JSON structure. See example below|
+
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|Responsecode|0 (if successful)|
+|message|Status Message|Folder permissions successfully updated|
+
+*JSON structure*
+
+*You pass the values for the permissions as a JSON structure. The order is:*
+
+|Nanme|Description||
+|-----|-----------|---------|
+|folderid|ID of the folder||
+|groupid|ID of the group|**The "EVERYBODY" group has the ID of "0" (zero)!**|
+|permission|R = read only ; W = read/write ; X = full add |
+	
+*A example of passing the values would be (you need to serialize your array in order to pass it in a URL):*
+
+```
+[["255F307E-AE5A-4E66-AD2F6BBE81D0541C", "13E33EB4-4A82-4CF7-B1DAA549DA80E86B", "X"]]
+```
+
+*With CFML you can use the following code snippet to create the JSON (The below code will create a 2 dimensional array and using 2 groups).*
+
+```
+<cfset j = arrayNew(2)>
+<cfset j[1][1] = "EA4191FB6E0F40D2AFE3ABB85E41118A">
+<cfset j[1][2] = "13E33EB4-4A82-4CF7-B1DAA549DA80E86B">
+<cfset j[1][3] = "X">
+<cfset j[2][1] = "EA4191FB6E0F40D2AFE3ABB85E41118A">
+<cfset j[2][2] = "8931CF69-7FB1-476D-9D2B00F63D9D439A">
+<cfset j[2][3] = "W">
+ 
+<cfset j = SerializeJSON(j)>
+```
+
+*REST: Sample Request*
+
+```
+/global/api2/folder.cfc?method=setFolderPermissions&api_key=CA1EBCFD45084E3991EA569DB10A29AA&permissions=[["255F307E-AE5A-4E66-AD2F6BBE81D0541C", "13E33EB4-4A82-4CF7-B1DAA549DA80E86B", "X"]]
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Folder permissions successfully added"]}
+```
+___
+
+### Collection API2
+
+**Get a list of Collections**
+
+*This method will return all collections within a collection "folder". To iterate for sub-collections you will need to call this method each time.*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getcollections|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input||
+|---------|-----------|----|--------|------------|------------|
+|api_key|A valid api key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943||
+|folderid|The ID of the collection folder you want to retrieve collections from.|String|yes|2 As of Razuna 1.5.5 you can also pass in a list of folderid's like: 1,34,234|Razuna 1.5.5 Hosted Edition since 16.12.2012|
+|released|Query collections according to released status|String|no|Empty value (default)true false|Razuna 1.5.5 Hosted Edition since 10.03.2012 |
+
+*Output Value*
+
+|Name|Description|Sample Output||
+|----|-----------|-------------|----------|
+|col_id|ID of the collection|212||
+|change_date|Date of the last change to this collection|||
+|col_name|Name of collection|My collection||
+|collection_description|Description|My collection description|Razuna 1.5.5 (hosted edition 12.11.2012)|
+|collection_keywords|Keywords|My keywords|Razuna 1.5.5 (hosted edition 16.12.2012)|
+|col_released|Status of release|true|Razuna 1.5.5 (hosted edition 10.03.2012)|
+|col_copied_from|If copied parent collection ID|108|Razuna 1.5.5 (hosted edition 10.03.2012)|
+|totalassets|How many assets are in this collection|8||
+|totalaimg|How many images are in this collection|5||
+|totalavid|How many videos are in this collection|2||
+|totaladoc|How many documents are in this collection|1||
+|totalaud|How many audios are in this collection|3||
+
+*REST: Sample Request*
+
+```
+/global/api2/collection.cfc?method=getcollections&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&folderid=1
+```
+
+*Sample Output*
+
+```
+{"columns":["col_id","change_date","col_name","totalimg","totalvid","totaldoc","totalaud","totalassets"],"data":[["DF45F1F8307A4B92A4EF5FB09001AFE1","January,
+ 30 2012 00:00:00","chakra
+collection",0,0,0,0,0],["A6CE649FAA5F434EB513CA15656AB5AA","March, 15
+2012 00:00:00","Marketing Material March
+2012",2,1,2,0,5]]} 
+```
+
+> **Output format** :*Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Retrieving all assets in a collection**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getassets|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid api_key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|collectionid|The ID of the collection you want to retrieve assets from.|String|yes|1|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|	
+|Response|A result code with the status of the login. If the result is 0 the method was successful.|0|
+|calledwith|The collection id you called this method|1|
+|totalassetscount|How many assets are in this folder|8|
+|different value fields|Each record with is lists|see sample output|
+
+> **Updates** : *As of Razuna 1.5.5 (hosted edition since 30.01.2013) the additional column "rendition_id" and "rendition_url" are being returned, also.*
+
+*REST: Sample Request*
+
+```
+/global/api2/collection.cfc?method=getassets&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+&collectionid=234
+```
+
+*Sample Output*
+
+```
+{"columns":["id","filename","folder_id","extension","extension_thumb","video_image","size","width","height","filename_org","kind","description","keywords","path_to_asset","cloud_url","cloud_url_org","subassets","local_url_org","local_url_thumb","responsecode","totalassetscount","calledwith","rendition_id","rendition_url"],"data":[["5DBE0927C6AA4212B0001930C0F7D7A5","01.14.12
+ Affliction LA Lookbook
+36475-Edit.tif","4564659C48B348C7B5DAF95AE6C3854E","jpg","jpg","dummy","65493",550,549,"2.jpg","img","","This
+ is a
+demo","4564659C48B348C7B5DAF95AE6C3854E/img/5DBE0927C6AA4212B0001930C0F7D7A5","","","true","http://localhost:8080/assets/1/4564659C48B348C7B5DAF95AE6C3854E/img/5DBE0927C6AA4212B0001930C0F7D7A5/2.jpg","http://localhost:8080//assets/1/4564659C48B348C7B5DAF95AE6C3854E/img/5DBE0927C6AA4212B0001930C0F7D7A5/thumb_5DBE0927C6AA4212B0001930C0F7D7A5.jpg","0",4,"c-BEF59DE2E65B4709993FDCE6C5E1D818","34941591005E44BEAE6AFE8D8EC6B89E","http://localhost:8080/assets/1/3C05DA46FA184E4F98E2A93FC7B3FFDA/img/34941591005E44BEAE6AFE8D8EC6B89E/hn2_34941591005E44BEAE6AFE8D8EC6B89E.tif"]]}
+```
+
+> **Output Format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+___
+
+**Search**
+
+> **Availability** : *Search for collections is available as of Razuna 1.5.5 and on the Hosted Edition as of 16.12.2012! As of Razuna 1.5.5 (hosted edition since 16.12.2012) the column "colid" holds the collection ID(s) the file might be in.*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|search|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|	
+|api_key|A valid api_key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|id|ID of a collection|String|no|1|
+|name|Name|String|no|my collection|
+|description|Description|String|no|my description|
+|keyword|Keyword|String|no|my keyword|
+|released||String|no|true false|
+
+*(Name, description and keywords searches will be made as "wildcard" searches. Technically, a SQL LIKE and adding "%")*
+
+*Output Value*
+
+The search will return the exact output as the [getcollection() method](http://wiki.razuna.com/display/ecp/Collection+API2#CollectionAPI2-GetalistofCollections)!
+
+*REST: Sample Request*
+
+```
+/global/api2/collection.cfc?method=search&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&name=mycol
+```
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+	
+___
+
+### Label API2
+
+The Label API allows you to add, modify and remove labels in your system. Furthermore you can label your assets or remove labels from the asset. The following methods are available: Get all labels ; Get one label ; Add or update a label ; Remove a label ; Add labels to an asset ; Remove labels from an asset ; Get label of asset ; Get asset of label ; Search for label(s).
+
+**Get all labels**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getall|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|	
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|label_id|ID of the label|1|
+|label_text|Text of the label itself|pictures|
+|label_path|Path of the label, each level is separated with a "/"|pictures/color|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=getall&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+```
+
+*Sample Output*
+
+```
+{"columns":["label_id","label_text","label_path"],"data":["1","pictures","pictures/color"]]} 
+```
+
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Get one label**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getlabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|ID of the label|String|yes|108 or as a list 108,109|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|label_id|ID of the label|1|
+|label_text|Text of the label itself|pictures|
+|label_path|Path of the label, each level is separated with a "/"|pictures/color|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=getlabel&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&label_id=108
+```
+
+*Sample Output*
+
+```
+{"columns":["label_id","label_text","label_path"],"data":["1","pictures","pictures/color"]]}
+```
+
+> **Outout format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Add or update a label**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|setlabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|ID of the label (Provide an label ID if you want to update the label, else DON'T pass any value and the label will be added!)|String|no|108|
+|label_text|Text of the label|String|yes|pictures|
+|label_parent|The parent label to nest the label|String|no|107|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|A response number|0 = success|
+|message|Status of operation|Label updated successfully|
+|label_id|The label id. If you create a new label, the ID of the label, else the ID you're passing|1110008|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=setlabel&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&label_text=painting
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Label added successfully","label_id":"1110008"]}
+```
+___
+
+**Remove a label**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|remove|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|ID(s) of the label to remove|String|yes|108 or as a list 108,109|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|A response number|0|
+|message|Status of operation|Label(s) removed|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=remove&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&label=108
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Label(s) removed"]}
+```
+___
+
+**Add labels to an asset**
+
+Method*
+
+|Method name|Returns|
+|-----------|-------|
+|setassetlabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|ID of the label|String|yes|108 or a list of IDs 108,109|
+|asset_id|ID of the asset|String|yes|129844|
+|asset_type|Type of asset|String|yes|img = images vid = videos aud = audios doc = documents folder = folders collection = collection |
+|append|If set to true it will append to existing labels, else set to false to overwrite|String|no|true (default) false (all labels will be replaced with these ones)|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|A response number|0 = success|
+|message|Status of operation|Label(s) added|
+
+*REST: Sample Request*
+
+```
+{["responsecode":"0","message":"label has been assed to the asset successfully"]}
+```
+___
+
+*Remove labels from an asset*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|removeassetlabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|ID(s) of the label to remove|String|yes|108 or as a list 108,109|
+|asset_id|ID of the asset|String|yes|1989|	
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|A response number|0 = success|
+|message|Status of operation|Label(s) removed|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=removeassetlabel&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&label_id=108&asset_id=1989
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Label(s) has been removed from the asset successfully]} 
+```
+___
+
+**Get label of asset**
+
+*Returns all labels of an asset.*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getlabelofasset|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|asset_id|ID of the asset|String|yes|108 or as a list 108,109|
+|asset_type|Type of asset to query|String|yes|img = images doc = documents vid = videos aud = audios folder = folders collection = collections |
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|label_id|ID of the label|1|
+|label_text|Text of the label itself|pictures|
+|label_path|Path of the label, each level is separated with a "/"|pictures/color|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=getlabelofasset&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&asset_id=108&asset_type=img
+```
+
+*Sample Output*
+
+```
+{"columns":["label_id","label_text","label_path"],"data":["1","pictures","pictures/color"]]}
+```
+
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Get asset of label**
+
+*Returns all assets with the given label_id.*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getassetoflabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|label_id|Label ID|String|yes|108|
+|label_type|From which label type to return records|String|no|assets (default) folders collections |
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|Columns|Different columns|see sample output|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=getassetoflabel&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&label_id=108
+```
+
+*Sample Output*
+
+```
+{"columns":["id","filename","folder_id_r","ext","filename_org","kind","is_available","date_create","date_change","link_kind","link_path_url","path_to_asset","cloud_url"],"data":[["5CACD8076F2A41909790DF9C4BCBE60B","IMG_0903.jpg","E6EA9B014E6046EAA3F4390E3ED77791","jpg","IMG_0903.jpg","img","1","April,
+ 23 2012 19:12:55","March, 26 2012
+00:00:00","","/Users/nitai/Documents/workspace/razuna/raz1/dam/incoming/api5CACD8076F2A41909790DF9C4BCBE60B","E6EA9B014E6046EAA3F4390E3ED77791/img/5CACD8076F2A41909790DF9C4BCBE60B",""]]}
+```
+
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Search for label(s)**
+
+> **Availability** : *This API method is available in release 1.6.2 and above*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|searchlabel|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|searchfor|Label(s) to search for|String|yes|pictures|
+|overridemax|The search limits the # of records returned to 1000. If you wish to return all records you can use this parameter to override the limit e.g. &overridemax=1. Doing so may use up server resources so caution should be used with large record sets. |Numeric|no|1|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|label_id|ID of the label|1|
+|label_text|Text of the label itself|pictures|
+|label_path|Path of the label, each level is separated with a "/"|
+
+*REST: Sample Request*
+
+```
+/global/api2/label.cfc?method=searchlabel&api_key=54592180-7060-4D4B-BC74-2566F4B2F943&searchfor=pictures
+```
+
+*Sample Output*
+
+```
+{"columns":["label_id","label_text","label_path"],"data":["1","pictures","pictures/color"]]} 
+```
+___
+
+### Custom Fields API2
+
+The Custom Fields API allows you to retrieve, add and get custom fields of an asset. The following methods are available: Get all custom fields , Add custom field , Get custom fields of asset , Set custom field value in bulk , Set custom field value.
+
+**Get all custom fields**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getall|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|id|ID of the field|108|
+|text|Text of the field|my custom field|
+|type|What type the field is (text, textarea, etc.)|text|
+|enabled|If the field is enabled in Razuna|T|
+|show|For which asset type the field is enabled|all (default) img = Images vid = Videos aud = Audios doc = Documents users = Users |
+
+*REST: Sample Request*
+
+```
+/global/api2/customfield.cfc?method=getall&api_key=54592180-7060-4D4B-BC74-2566F4B2F943
+```
+
+*Sample Output*
+
+```
+{"columns":["id","text","enabled","type","show"],"data":["108","my custom field","T","text","all"]]} 
+```
+
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Add custom field**
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|setfield|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|field_text|The text of the field|String|yes|my custom field|
+|field_type|Type of the field|String|yes|text ; textarea ; radio (radio button) ; select (select list) ; select_multi (select multiple) as of Razuna 1.7.5|
+|field_show|To what asset type should the field be enabled|String|no|all (default) ; img = Images ; vid = Videos ; aud = Audios ; doc = Documents ; users = Users |
+|field_enabled|Is the field enabled within Razuna|String|no|T = yes (default) ; F = no |
+|field_select_list|If your field type is a select list, enter its values here|String|no|value 1,value 2,value 3|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|Responsecode|0 (if successful)|
+|message|Status Message|Custom field successfully added|
+|field_id|ID of the new custom field|109|
+
+*REST: Sample Request*
+
+```
+/global/api2/customfield.cfc?method=setfield&api_key=CA1EBCFD45084E3991EA569DB10A29AA&field_text=location&field_type=text
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Custom field successfully added","field_id":"1110008"]}
+```	
+___
+
+**Get custom fields of asset**
+
+*Returns all custom fields from asset(s).*
+
+*Method*
+
+|Method name|Returns|
+|-----------|-------|
+|getfieldsofasset|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|asset_id|ID of the asset(s)|String|yes|108 or a list like 108,109,etc.|
+|lang_id|ID of the language for the results|String|no|1 (default)|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|field_id|ID of the custom field|109090|
+|field_text|Text of the custom field|location|
+|field_value|Value of the custom field for this asset record|Denmark|
+
+*REST: Sample Request*
+
+```
+/global/api2/customfield.cfc?method=getfieldsofasset&api_key=CA1EBCFD45084E3991EA569DB10A29AA&asset_id=0D624466697B4A27A498E78373AE6FF3
+```
+
+*Sample Output*
+
+```
+{"columns":["field_id","field_text","field_value"],"data":[["A7A56950-C802-4CE7-B2A36BBE5B3F454D","Hotel
+Rooms",""],["237503B5-BB08-4658-8E4EFC2759847F07","photopgrapher","F"],["6BC43A50-BB0D-42C9-B8FE309678048CB0","myselect","one"]]}
+```
+
+> **Output format** : *Remember you can adjust the output dynamically. The API returns JSON by default. For record sets it defaults to a ROW based set, if you need COLUMNS simply append "&__BDQUERYFORMAT=column" to your call. In case, you need JSONP you want to append "&__BDRETURNFORMAT=jsonp&callback=?". In order to retrieve XML (WDDX) you simply need to append "&__BDRETURNFORMAT=wddx".*
+
+___
+
+**Set custom field value in bulk**
+
+|Method name|Returns|
+|-----------|-------|
+|setfieldvaluebulk|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|field_values|JSON Structure|String|yes|JSON structure See the example below|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|Responsecode|0 (if successful)|
+|message|Status Message|Custom field values successfully added|
+
+*JSON parameter for field_values*
+
+*You pass the values for the custom fields as a JSON structure. The first parameter is the assetid, followed by a embedded JSON structure of the custom field ID and the custom field value. A example of passing the values would be (you need to serialize your array in order to pass it in a URL):*
+
+```
+[["1ABB08AA3B47402CB4BF1B398F4CD6F8",[["255F307E-AE5A-4E66-AD2F6BBE81D0541C","value 1"],["7FD45BCC-F3ED-4C85-8CCCF50CDCE98E8E","value 2"]]]]
+```	
+
+*In a bulk statement for many files you would simple add them to the JSON structure as in:*
+
+```
+[["1ABB08AA3B47402CB4BF1B398F4CD6F8",[["255F307E-AE5A-4E66-AD2F6BBE81D0541C","value 1"],["7FD45BCC-F3ED-4C85-8CCCF50CDCE98E8E","value 2"]]],["BB59AB4D207F41C79408E5DC04B8651A",[["FB3489CC-059E-424F-B448371E18DDE6A6","value 3"],["F72A20FE-D5EC-4CF0-98C689F6FE87CCB9","value 4"]]]]
+```
+
+*REST: Sample Request*
+
+```
+/global/api2/customfield.cfc?method=setfieldvaluebulk&api_key=CA1EBCFD45084E3991EA569DB10A29AA&field_values=[["1ABB08AA3B47402CB4BF1B398F4CD6F8",[["255F307E-AE5A-4E66-AD2F6BBE81D0541C","value 1"],["7FD45BCC-F3ED-4C85-8CCCF50CDCE98E8E","value 2"]]]]
+```
+
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Custom field values successfully added"]}
+```
+___
+
+**Set custom field value**
+
+> **Bulk adding** : *You can also use the setfieldvaluebulk() method above in order to set many custom field values for many files at the same time!*
+
+|Method name|Returns|
+|-----------|-------|
+|setfieldvalue|Record set|
+
+*Input Parameter*
+
+|Parameter|Description|Type|Required|Sample Input|
+|---------|-----------|----|--------|------------|
+|api_key|A valid API key|String|yes|54592180-7060-4D4B-BC74-2566F4B2F943|
+|field_values|JSON Structure|String|yes|JSON structure of metadata See the metadata field list below To set a value for select (multiple) simply comma separate the values!|
+|assetid|The id of the asset or a list of id's (delimited with a ",")|String|yes|108 or a list like 108,109,etc.|
+
+*Output Value*
+
+|Name|Description|Sample Output|
+|----|-----------|-------------|
+|responsecode|Responsecode|0 (if successful)|
+|message|Status Message|Custom field values successfully added|
+
+*JSON parameter for field_values*
+
+*You pass the values for the custom fields as a JSON structure. You also need to know the ID of the custom field. A example of passing the values would be (you need to serialize your array in order to pass it in a URL):*
+
+```
+[["255F307E-AE5A-4E66-AD2F6BBE81D0541C","value 1"],["7FD45BCC-F3ED-4C85-8CCCF50CDCE98E8E","value 2"]]
+```
+
+*REST: Sample Request*
+
+```
+/global/api2/customfield.cfc?method=setfieldvalue&api_key=CA1EBCFD45084E3991EA569DB10A29AA&assetid=0EB8E7F82A0D4A76A4AF9A72993FED5B&field_values=[["255F307E-AE5A-4E66-AD2F6BBE81D0541C","val1"],["7FD45BCC-F3ED-4C85-8CCCF50CDCE98E8E","val2"]]
+```
+	
+*Sample Output*
+
+```
+{["responsecode":"0","message":"Custom field values successfully added"]}
+```
+___
+
+### User API2
+
+> **Razuna Hosted Platform** : *Only users in the Administrator group are allowed to use these API calls.*
+
+
 
 	
 
 
-
-
-
 	
-
-
-	
-
-	
-
-
-
-
-	
-
-
-
-	
-
-
-
-	
-
-
-	
-
-
-
-
-	
-
 
 
 
