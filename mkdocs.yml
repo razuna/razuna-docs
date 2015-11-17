@@ -44,7 +44,20 @@ pages:
   - White-Labelling : 'admin/White-Labelling.md'
   - Indexing : 'admin/Indexing.md'
 - Developer Guide:
-  - API Guide : 'api/index.md'
+  - API Guide : 
+     - Over view : 'api/index.md'
+     - Upload API2 : 'api/Upload API2.md'
+     - Search API2 : 'api/Search API2.md'
+     - Asset API2 : 'api/Asset API2.md'
+     - Folder API2 : 'api/Folder API2.md'
+     - Collection API2 : 'api/Collection API2.md'
+     - Label API2 : 'api/Label API2.md'
+     - Custom Fields API2 : 'api/Custom Fields API2.md'
+     - User API2 : 'api/User API2.md'
+     - Group API2 : 'api/Group API2.md'
+     - Host API2 : 'api/Host API2.md'
+     - Comment API2 : 'api/Comment API2.md'
+     - Basket API2 : 'api/Basket API2.md'
   - Plugin Guide : 
      - Over view : 'plugins/index.md'
      - Plugin API : 'plugins/Plugin API.md'
