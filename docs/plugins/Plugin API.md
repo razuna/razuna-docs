@@ -113,7 +113,7 @@ ___
 |-------|--------|
 |String|h2 = The embedded H2 database (Oracle syntax support) ; oracle = Oracle ; mysql = MySQL  ; mssql = MS SQL  ; db2 = IBM DB2 |
 
-* Example:*
+*Example:*
 
 ```
 <cfif getDatabase() EQ "mysql">...</cfid>
