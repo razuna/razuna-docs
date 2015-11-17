@@ -45,7 +45,10 @@ pages:
   - Indexing : 'admin/Indexing.md'
 - Developer Guide:
   - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
+  - Plugin Guide : 
+     - Over view : 'plugins/index.md'
+     - Plugin API : 'plugins/Plugin API.md'
+     - Plugin Hooks : 'plugins/Plugin Hooks.md'
 - About:
   - About: 'about/index.md'
   - License: 'about/license.md'
