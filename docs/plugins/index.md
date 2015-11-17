@@ -2,6 +2,6 @@
 
 **This section is especially for developers who want to build plugins. Please find the follow sections here.**
 
-* Plugin API
+* [Plugin API](/plugins/Plugin API)
 
-* Plugin Hooks
+* [Plugin Hooks](/plugins/Plugin Hooks)
