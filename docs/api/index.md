@@ -7,12 +7,13 @@ On this page
    * Available API Calls
    * API Requests
 
- Important Information about this version : 
+ **Important Information about this version :**
 
-`The API version 2 is available as of Razuna 1.5 and on the hosted platform as of March 26th 2012 !!!` 
+*The API version 2 is available as of Razuna 1.5 and on the hosted platform as of March 26th 2012 !!!* 
 
  **API usage on the Hosted Platform**
-`If you use the API against the hosted Razuna platform, please make sure that your data plan is within your accounts bandwidth and storage quota. If your bandwidth or storage is exceeded any API operation will fail to work!`
+
+*If you use the API against the hosted Razuna platform, please make sure that your data plan is within your accounts bandwidth and storage quota. If your bandwidth or storage is exceeded any API operation will fail to work!*
 ___
 
 **Welcome to the Razuna API (version 2)**
