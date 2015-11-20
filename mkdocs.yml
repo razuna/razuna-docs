@@ -17,6 +17,7 @@ pages:
   - Linux: 'installation/linux.md'
   - Windows: 'installation/windows.md'
   - MacOs X: 'installation/macosx.md'
+  - Razuna WAR Installation : 'installation/WAR.md'
   - Deploy on Virtual Machines: 'installation/vms.md'
   - Deploy on AWS (Amazon): 'installation/aws.md'
   - Use front-end server: 'installation/nginxapache.md'
