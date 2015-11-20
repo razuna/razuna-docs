@@ -21,6 +21,17 @@ pages:
   - Deploy on Virtual Machines: 'installation/vms.md'
   - Deploy on AWS (Amazon): 'installation/aws.md'
   - Use front-end server: 'installation/nginxapache.md'
+- Connecting Razuna to a database :
+  - Over view : 'db_connect/index.md'
+  - MySQL : 'db_connect/MySQL.md'
+  - Recommended MySQL settings : 'db_connect/Recommended MySQL settings.md'
+  - MSSQL : 'db_connect/MSSQL.md'
+  - Setup MSSQL Server for Razuna : 'db_connect/Setup MSSQL Server for Razuna.md'
+  - DB2 : 'db_connect/DB2.md'
+  - Oracle : 'db_connect/Oracle.md'
+  - Run the Oracle Database scripts : 'db_connect/Run the Oracle Database scripts.md'
+  - Migrate between databases : 'db_connect/Migrate databases.md'
+
 - Upgrade Razuna: 
    - Over view : 'installation/Upgrade/index.md'
    - Upgrade from 1.3.5 to 1.4 : 'installation/Upgrade/Upgrade from 135 to 14.md'
