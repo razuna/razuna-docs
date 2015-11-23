@@ -84,7 +84,7 @@ When you are at the firttime wizard page you should select "Custom Installation"
 
 **Choose database setup**
 
-In this step you have the option to install Razuna to your preferred database. You can either use the embedded database, MySQL, MS SQL, Oracle or DB2. If you are **not** using the embedded database then please make sure that you followed our database guide for Razuna ([Connecting Razuna to a database](/database connect/)) **before** you continue. Once you made your choice, click on continue.
+In this step you have the option to install Razuna to your preferred database. You can either use the embedded database, MySQL, MS SQL, Oracle or DB2. If you are **not** using the embedded database then please make sure that you followed our database guide for Razuna ([Connecting Razuna to a database](/db_connect/)) **before** you continue. Once you made your choice, click on continue.
 
 ![](/installation/img/ftw-2.png)
 
