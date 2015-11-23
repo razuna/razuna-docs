@@ -8,9 +8,9 @@ ___
 
 **Before you begin**
 
-* Read the [release notes for the version you are upgrading to](http://wiki.razuna.com/display/ecp/Razuna+Release+Notes) and this **complete upgrade guide** for the version you are upgrading to, as there may be version-specific instructions.
+* Read the [release notes for the version you are upgrading to](/Release_Notes/) and this **complete upgrade guide** for the version you are upgrading to, as there may be version-specific instructions.
 
-* Double check the [Razuna Release Notes](http://wiki.razuna.com/display/ecp/Razuna+Release+Notes) that you don't need to run the "Update & Export Script" or that you have to run it!
+* Double check the [Razuna Release Notes](/Release_Notes/) that you don't need to run the "Update & Export Script" or that you have to run it!
 
 * Check for known issues in the [Razuna Issue tracking platform](http://issues.razuna.com/).
 
