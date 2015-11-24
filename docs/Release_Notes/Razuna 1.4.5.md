@@ -4,7 +4,7 @@
 
 Razuna 1.4.5 brings major enhancements and many important bug fixes to the 1.4.4 release.
 
-**Widgets – Share or embed your folders / collections with ease**
+**Widgets : Share or embed your folders / collections with ease**
 
 Widgets can be setup for every folder or collection, you can even create as many widgets as you want for a given folder/collection, since each widget has different settings. Foremost, you can arrange your assets to be shown in the thumbnail grid or as a slideshow. Also, you will have a preview function for each asset and can download each one individually.
 
@@ -16,13 +16,13 @@ Coming in line with the release of Widgets, we also enabled browsing trough subf
 
 **Add additional versions of an asset**
 
-As more and more organizations start to move to Razuna, the need for a “unified view” of an asset was raised. Say, you have different versions of your assets already deployed, on YouTube, Vimeo, Flickr, and Soundcloud or simply want to upload each version of your already converted formats to Razuna. Previously, each upload created a new “asset record”.
+As more and more organizations start to move to Razuna, the need for a "unified view" of an asset was raised. Say, you have different versions of your assets already deployed, on YouTube, Vimeo, Flickr, and Soundcloud or simply want to upload each version of your already converted formats to Razuna. Previously, each upload created a new "asset record".
 
-With the new “Additional Versions” functionality you can simply point to your existing asset on the net or upload your versions. Doing so, will give you a combined view, of your original asset, any converted formats and and your own versions.
+With the new "Additional Versions" functionality you can simply point to your existing asset on the net or upload your versions. Doing so, will give you a combined view, of your original asset, any converted formats and and your own versions.
 
 **Small Re-Design, Lighter Interface**
 
-We have done some small re-design of the Razuna User Interface. The goal was to get rid of the many shades and table lines, in short to bring a “lighter user experience” to the Razuna feeling.
+We have done some small re-design of the Razuna User Interface. The goal was to get rid of the many shades and table lines, in short to bring a "lighter user experience" to the Razuna feeling.
 
 **Overall changes**
 
@@ -37,7 +37,6 @@ Last but not least, Developers have a reason to celebrate. With Razuna 1.4.5 we 
    * Adding a user returns the generated userid
 
 ___
-
 **How to upgrade**
 
 You should update to 1.4.2 before updating to 1.4.5! If you have already done so, then simply follow the [Razuna Update Guide](/installation/upgrade/).
