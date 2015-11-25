@@ -1,6 +1,6 @@
 Welcome to Razuna System. In this page , we will show you how to use our system to manage the data in smoothly.
 
-### Login :
+### Login 
 
 Firstly user can login to system by account (username and password) which provided by System Admin or by Social accounts.
 
@@ -14,7 +14,7 @@ To browse the file follow the Collection or Smart folder or Labels. Please click
 
 ![](img/folder_structure.jpg)
 ___
-### Quick Search :
+### Quick Search 
 
 The search engine of Razuna is based on the [Lucene](http://lucene.apache.org/) search engine. Lucene is a open source search engine and is part of the Apache Group. Lucene features among others useful functionalities phrase queries, wildcard queries, proximity queries, range queries and more.
 
@@ -22,10 +22,10 @@ The search engine of Razuna is based on the [Lucene](http://lucene.apache.org/) 
 
 The "quick search" of Razuna searches within the following fields; **filename, keywords, description, file contents (e.g. all words in a PDF or word document), ID, labels and custom fields (user created)**. If you want to search in other fields, then use the advanced search or create your own field search that you can use in quick search.
 ___
-**Case - Sensitive :**
+**Case - Sensitive**
 The search is not case sensitive.
 ___
-**Terms :**
+**Terms**
 
 There are two types of terms: Single Terms and Phrases.
 
@@ -35,7 +35,7 @@ A Phrase is a group of words surrounded by double quotes such as "hello dolly".
 
 Searching for hello dolly without quotes will search for terms matching hello AND terms matching dolly in the index i.e. hello my name is dolly would be a match but hello my name is amanda or my name is dolly would not be a match. To force them to be searched together as a phrase double quotes are required. By default Razuna uses an AND operator between keywords. So searching for hello dolly is equivalent to searching for hello AND dolly. You can override this be adding your own operator e.g. hello OR dolly which will search for terms matching either hello OR dolly i.e. hello my name is amanda or . Note that the operator must be capital case.
 ___
-**Field Search :**
+**Field Search**
 Razuna supports fielded data search. When performing a search you can either specify a field, or Razuna searches in the default fields (see above).
 
 You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.
@@ -62,7 +62,7 @@ keywords:(hello AND dolly)
 ```
 ___
 
-**Wild Card Search :**
+**Wild Card Search**
 
 Razuna supports single and multiple character wildcard searches within single terms (not within phrase queries).
 
@@ -81,7 +81,7 @@ test*
 ```
 ___
 
-**Fuzzy Searches :**
+**Fuzzy Searches**
 
 Razuna supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm. To do a fuzzy search use the tilde, "~", symbol at the end of a Single word Term. For example to search for a term similar in spelling to "roam" use the fuzzy search:
 ```
@@ -98,7 +98,7 @@ roam~0.8
 The default that is used if the parameter is not given is 0.5.
 ___
 
-**Boosting a Term :**
+**Boosting a Term**
 
 Razuna provides the relevance level of matching documents based on the terms found. To boost a term use the caret, "^", symbol with a boost factor (a number) at the end of the term you are searching. The higher the boost factor, the more relevant the term will be.
 
@@ -117,7 +117,7 @@ This will make documents with the term "dam" appear more relevant. You can also 
 By default, the boost factor is 1. Although the boost factor must be positive, it can be less than 1 (e.g. 0.2)
 ___
 
-**Boolean Operators :**
+**Boolean Operators**
 
 Boolean operators allow terms to be combined through logic operators. Razuna supports AND, "+", OR, NOT and "-" as Boolean operators(Note: Boolean operators must be ALL CAPS).
 
@@ -201,7 +201,7 @@ To escape these character use the \ before the character. For example to search 
 \(1\+1\)\:2
 ```
 ___
-### Advanced Search :
+### Advanced Search
 
 The "Advanced Search" allow us to find the file by criteria follow file format such as : Documents , Videos , Audios , Images or All of the formats. We can use file names , key words , descriptions , extension or metadata to search the files.
 
@@ -210,7 +210,7 @@ Please click to "Advanced Search" from Menu on top. The new windows of Advanced 
 ![](img/advanced_search1.jpg)
 ![](img/advanced_search2.jpg)
 ___
-### Show Basket Feature :
+### Show Basket Feature
 
 If you want to send some of files by email or transfer it by FTP service or download them in one moment. We can help you by "Show Basket" feature. All you can do is just click into "Put in basket" icon from the files in your folders or also your collections which you want to move them into basket for process.
 
@@ -224,37 +224,37 @@ From the Basket , user can download all the files in a zip file to local machine
 
 ![](img/save_basket.jpg)
 ___
-Email Basket : 
+Email Basket 
 
 From here , you can send data from the basket by email composer in easy way and comfortable.
 
 ![](img/send_mail_basket.jpg)
 ___
-FTP Basket :
+FTP Basket 
 
 Our system also support user through FTP service , you can click into FTP Basket and input FTP server address , username and password to get the authentication from FTP service and allow to transfer the data from Razuna.
 
 ![](img/FTP_basket.jpg)
 ___
 
-Export Metadata :
+Export Metadata 
 
 This function help you to export the metadata (Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.) of your data to a format likes :  XLS , XLSX or CSV file. You just need to choose the format and click to export button to finish.
 
 ![](img/Export_metadata_basket.jpg)
 ___
-Remove Basket :
+Remove Basket 
 
 When user click this button , all the files in Basket will be clear from Basket.
 ___
 
-### Manage Function :
+### Manage Function 
 
 From this part , users are able to create a new folder on the current level , reload the tree folder in the case if you are missing something this might help but usually not needed , Show folders from all users used to show the personal folders of your users.
 
 ![](img/Manage_add_reload_showmyfolder.jpg)
 
-**Add folder on root level :**
+**Add folder on root level**
 
 In the following dialog window you are able to create a new folder on the current level. At this window , user can fill in the folder name and description. The languages for folder name and description are used in the case user want to change the default system language appearance to German , Italian or Japanese. 
 
@@ -264,16 +264,16 @@ Finally we click Add button locate at bottom of dialog to finish.
 
 ![](img/Manage_add_reload_showmyfolder1.jpg)
 
-**Reload :**
+**Reload**
 Reload the folder tree (usually not needed but if you are missing something this might help).
 
-**Show folder from all users :**
+**Show folder from all users**
 Users can click to this part to show the personal folders to all users.
 ___
 
 ### How to add assets to Razuna
 
-**Add assets from local machine :**
+**Add assets from local machine**
 
 From your current folder on the left side, click into it and the contents in your folder will be show in main page. 
 
@@ -294,14 +294,14 @@ Finally , you can see your files showing on Razuna system now.
 ![](img/files_show.jpg)
 ___
 
-**Add assets from Server :**
+**Add assets from Server**
 
 For adding files from Server , all you can do is enter the corrected path to Razuna system , then checking it with Validate button to make sure the path you were entered is correct and click to Import from path to add assets from Server to Razuna System.
 
 ![](img/Add_file_from_server.jpg)
 ___
 
-**Add assets from FTP :**
+**Add assets from FTP**
 
 Please enter your FTP access information to be able to retrieve and store file from the FTP site in your system such as :
 
@@ -310,7 +310,7 @@ FTP server , Username , Password then Click into "Login to FTP site" button to f
 ![](img/add_file_from_ftp.jpg)
 ___
 
-**Link to content :**
+**Link to content**
 
 If you do not want to import your asset into Razuna and simply want to link to it, then add the absolute path to the asset below or enter the URL to the asset (can be on Facebook, YouTube or just about any URL that is publicly available).
 
@@ -326,7 +326,7 @@ Our system have a Menu actions inside your current folder which you will see whe
 
 ![](img/Menu_action_current_folder.jpg)
 
-**Select All :** 
+**Select All** 
 
 This action will allow user select all the data from the current folder for many purposes such as : Put in Basket , Create Alias , Move , Batch , Add to Existing Collection , Export Metadata or Change the Views (Thumbnail View , List View , Quick Edit View).
 
@@ -336,7 +336,7 @@ Or if you want to cancel the "Select All" action you can click into "Deselect Al
 
 ___
 
-**Search within folder :**
+**Search within folder**
 
 In the case you have many files in your current folder and want to get it quickly so you can use "Search within folder" option. This option allow you filter data follow the format such as : Documents , Images , Videos and Audios or All Assets.
 
@@ -346,7 +346,7 @@ User just need enter the information related to the files likes : File name , De
 
 ___
 
-**More actions :**
+**More actions**
 
 These actions allow user perform the tasks such as : Add Folder , Add Folder to favourites , Show assets from sub folder , Print , Rss Feed of this folder , Create a Word Document , Export Metadata , Import Metadata , Download assets in this folder.
 
@@ -354,7 +354,7 @@ These actions allow user perform the tasks such as : Add Folder , Add Folder to 
 
 ___
 
-**Views :**
+**Views**
 
 User can change the type of views from "Thumbnail View" to "List View" or "Quick Edit View"
 
@@ -362,27 +362,27 @@ User can change the type of views from "Thumbnail View" to "List View" or "Quick
 
 ___
 
-### Folder Management :
+### Folder Management
 
 There are 2 options for user want to set the "Folder subscribe" and "Folder Sharing & Settings" at the Manage Folder Menu.
 
 ![](img/Manage_folder.jpg)
 
-**Folder subscribe :**
+**Folder subscribe**
 
 Subscribe to changes in folder (and its subfolders) which will be emailed to you on specifed interval.
 
 ![](img/Folder_subscribe.jpg)
 
-**Folder Sharing & Settings :**
+**Folder Sharing & Settings**
 
-* Folder Settings :
+* Folder Settings
 
 In this option , Razuna system allow user do setup the properties for current folder such as : Folder name , Description , Label , Permission for groups can be access to this folder , Apply workflow to files in this folder.
 
 ![](img/folder_setting12.jpg)
 
-* Sharing Options : 
+* Sharing Options 
 
 The sharing options will be used when you share a folder all files are accessible with the same group permissions. 
 
@@ -390,7 +390,7 @@ The sharing options will be used when you share a folder all files are accessibl
 
 ___
 
-**Widgets :**
+**Widgets**
 
 Widgets allow you to embed the assets in this folder/collection into any other web application, say a blog, CMS or alike.
 
@@ -400,7 +400,7 @@ You can create as many widgets you like, each with their own settings.
 
 ___
 
-**Thumbnail :**
+**Thumbnail**
 
 Choose Folder Thumbnail
 By default the system shows a folder image for each folder. If you instead want to show your own thumbnails as the folder image, you can upload one here or choose from any existing image in this folder.
@@ -409,7 +409,7 @@ By default the system shows a folder image for each folder. If you instead want 
 
 ___
 
-### File Management :
+### File Management
 
 When user want to change some information of their files or edit something , user just need click into any file in their current folder and the new file management window will appear.
 
@@ -421,7 +421,7 @@ From the sample image above , you can see the content of File Management is show
 
 ____
  
-**"Information Tag" :** 
+**"Information Tag"** 
 
 User can modify the file's information likes : Filename , Description , Keywords , Labels , Expiry date. Also you can see the File size , Date added , Last modified , Located in (Folder name) , Created by (user) , ID.
 
@@ -429,7 +429,7 @@ Beside the showing information task , we also build an action menu at "Informati
 
 ___
 
-**"Rendition Tag" :**
+**"Rendition Tag"**
 
 This function will allow users to change the resolution of your image or video files and get the direct link from the preview or original file.
 
@@ -441,7 +441,7 @@ After set the resolution , you click to "Convert" button to get the new resoluti
 
 ___
 
-**"Metadata Tag" :**
+**"Metadata Tag"**
 
 The Metadata Tag provide for user many of metadata standards to input such as : IPTC , XMP or Custom Metadata for process. In addition , you can copy the metadata content from this part.
 
@@ -449,7 +449,7 @@ The Metadata Tag provide for user many of metadata standards to input such as : 
 
 ___
 
-**"Comments Tag" :**
+**"Comments Tag"**
 
 This Tag is used by for comment to the file to marking or taking note to remember the date , tasks or anything they want.
 
@@ -457,11 +457,11 @@ This Tag is used by for comment to the file to marking or taking note to remembe
 
 ___
 
-**"Versions Tag" :**
+**"Versions Tag"**
 
 In this section , user have 2 options for versions of assets.
 
-* Upload new version :
+* Upload new version
 You can replace the current original asset with a new one by choosing the file below and upload it. The current version will be saved as a version and replaced by the new asset.
 
 * Upload old version
@@ -471,7 +471,7 @@ Uploaded new assets will be added as old versions, current original asset do not
 
 ___
 
-**"Sharing Options Tag" :**
+**"Sharing Options Tag"**
 
 Sharing Options are settings to sharing assets in the current folder. Users are able to set the file sharing options with 3 choices for each type of an asset : Downloadable , Orderable , Selected* (* Selected is valid when you use a widget. The selected asset is then used for the larger preview or for the slideshow.)
 
@@ -481,7 +481,7 @@ Users also can customize the sharing options and override these settings.
 
 ___
 
-**"History Tag" :**
+**"History Tag"**
 
 History is used for showing of the log of file such as : Created Date , Created Time , Description , Action , Type of file , User.
 
@@ -491,7 +491,7 @@ You can see or tracking the time when a file added to Razuna system and the time
 
 ___
 
-**"Assocciated Collections Tag" :**
+**"Assocciated Collections Tag"**
 
 One asset can be located in many collections from a system. If users want to know how many collections where storing the common file so we can use this function to check the number collections which the file is associated with.
 
