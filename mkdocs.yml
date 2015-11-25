@@ -7,28 +7,15 @@ markdown_extensions:
     - toc
 pages: 
 - Home : 'index.md'
-- Gettin Started with Razuna:
-  - Quick Start: 'start/quickstart.md'
-  - Terminology: 'start/terminology.md'
-  - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
+- Connecting Razuna to a database :
+  - Over view : 'db_connect/index.md'
+  - MySQL : 'db_connect/MySQL.md'
+  - Recommended MySQL settings : 'db_connect/Recommended MySQL settings.md'
+  - MSSQL : 'db_connect/MSSQL.md'
+  - Setup MSSQL Server for Razuna : 'db_connect/Setup MSSQL Server for Razuna.md'
+  - DB2 : 'db_connect/DB2.md'
+  - Oracle : 'db_connect/Oracle.md'
+  - Run the Oracle Database scripts : 'db_connect/Run the Oracle Database scripts.md'
+  - Migrate between databases : 'db_connect/Migrate databases.md'
 
 
