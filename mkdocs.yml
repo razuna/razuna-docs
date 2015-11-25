@@ -7,28 +7,16 @@ markdown_extensions:
     - toc
 pages: 
 - Home : 'index.md'
-- Gettin Started with Razuna:
-  - Quick Start: 'start/quickstart.md'
-  - Terminology: 'start/terminology.md'
-  - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
+ - API (old versions):
+     - Over view : 'api old/index.md'
+     - API Developer Guide version 1 : 'api old/API Guide ver1.md'
+     - Authentication API1 : 'api old/Authentication API1.md'
+     - Folder API1 : 'api old/Folder API1.md'
+     - Collection API1 : 'api old/Collection API1.md'
+     - Search API1 : 'api old/Search API1.md'
+     - Upload API1 : 'api old/Upload API1.md'
+     - Hosts API1 : 'api old/Hosts API1.md'
+     - User API1 : 'api old/User API1.md'
+     - Asset API1 : 'api old/Asset API1.md'
 
 
