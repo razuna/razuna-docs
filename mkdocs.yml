@@ -17,5 +17,6 @@ pages:
   - Deploy on Virtual Machines: 'installation/vms.md'
   - Deploy on AWS (Amazon): 'installation/aws.md'
   - Use front-end server: 'installation/nginxapache.md'
-
+  - Installing the Search Server : 'installation/Search_Server.md'
+  - Installing a Razuna Rendering Server : 'installation/Render_Server.md'
 
