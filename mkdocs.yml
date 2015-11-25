@@ -7,28 +7,19 @@ markdown_extensions:
     - toc
 pages: 
 - Home : 'index.md'
-- Gettin Started with Razuna:
-  - Quick Start: 'start/quickstart.md'
-  - Terminology: 'start/terminology.md'
-  - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
+- API2 Guide : 
+   - Over view : 'api/index.md'
+   - Upload API2 : 'api/Upload API2.md'
+   - Search API2 : 'api/Search API2.md'
+   - Asset API2 : 'api/Asset API2.md'
+   - Folder API2 : 'api/Folder API2.md'
+   - Collection API2 : 'api/Collection API2.md'
+   - Label API2 : 'api/Label API2.md'
+   - Custom Fields API2 : 'api/Custom Fields API2.md'
+   - User API2 : 'api/User API2.md'
+   - Group API2 : 'api/Group API2.md'
+   - Host API2 : 'api/Host API2.md'
+   - Comment API2 : 'api/Comment API2.md'
+   - Basket API2 : 'api/Basket API2.md'
 
 
