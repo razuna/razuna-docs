@@ -4,9 +4,31 @@ Razuna has been tested on Windows 7 and Server 2003, 2008 (R2) and 2012.
 
 ** Install Java**
 
-You need to install Java7 (1.7). Please grab the JDK package! You will find both [installers at the Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Do NOT download Java8, but download the Java 7 JDK installer!
-
+You need to install Java7 (1.7) for Razuna Stand alone version 1.7. However , from Razuna 1.8 Java 8 is a required! Java 7 or 6 is no longer supported! . Please grab the JDK package! You will find both [installers at the Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Do NOT download Java8, but download the Java 7 JDK installer!
 Additionally you need to define a system wide environment variable called "JAVA_HOME" and "JRE_HOME". The path to Java will be (depending on your installation) most of the time: C:\Program Files\Java\jdk7.xxx (JAVA_HOME) or C:\Program Files\Java\jre7 (JRE_HOME). It is crucial that the JAVA_HOME variable is correctly set. Do not continue until this is setup properly!
+
+*Declare the Java Environment in Windows :*
+
+Users should go to "Control Panel" then Click into "System" icon from there and choose "Advanced system Setting" from the left panel, next step is click into "Environment Variables" button as below :
+
+![](/installation/img/Environment_variables.jpg)
+
+Then a new windows named :  "Environment Variables" appears on your screen .From here , you click into "New" button to start declare the paths for Java , Please check the installation path of Java from your machine before this step :
+
+![](/installation/img/Declare_java_path.jpg)
+
+After that , create new paths for both of JAVA_HOME :
+
+![](/installation/img/java_home.jpg)
+
+And for JRE_HOME :
+
+![](/installation/img/jre_home.jpg)
+
+Click "OK" to save the paths to system.
+
+Now, you done for define system environment variable for JAVA setup.
+
 
 * Installation Paths : All the below applications come most of the time with an installer. Make sure to install all applications to the root level, e.g. C:\ImageMagick or C:\Exiftool. Theoretically, Razuna can manage spaces in the application path, but it is better to not have spaces at all!
 
