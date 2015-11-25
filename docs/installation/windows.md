@@ -4,8 +4,7 @@ Razuna has been tested on Windows 7 and Server 2003, 2008 (R2) and 2012.
 
 ** Install Java**
 
-You need to install Java7 (1.7) for Razuna Stand alone version 1.7. However , from Razuna 1.8 Java 8 is a required! Java 7 or 6 is no longer supported! . Please grab the JDK package! You will find both [installers at the Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Do NOT download Java8, but download the Java 7 JDK installer!
-Additionally you need to define a system wide environment variable called "JAVA_HOME" and "JRE_HOME". The path to Java will be (depending on your installation) most of the time: C:\Program Files\Java\jdk7.xxx (JAVA_HOME) or C:\Program Files\Java\jre7 (JRE_HOME). It is crucial that the JAVA_HOME variable is correctly set. Do not continue until this is setup properly!
+You need to install Java7 (1.7) for Razuna Stand alone version 1.7. However , from Razuna 1.8 Java 8 is a required! Java 7 or 6 is no longer supported! . Please grab the JDK package! You will find both [installers at the Java download page](http://www.oracle.com/technetwork/java/javase/downloads/index.html).Additionally you need to define a system wide environment variable called "JAVA_HOME" and "JRE_HOME". The path to Java will be (depending on your installation) most of the time: C:\Program Files\Java\jdk7.xxx (JAVA_HOME) or C:\Program Files\Java\jre7 (JRE_HOME). It is crucial that the JAVA_HOME variable is correctly set. Do not continue until this is setup properly!
 
 *Declare the Java Environment in Windows :*
 
