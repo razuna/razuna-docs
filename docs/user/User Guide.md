@@ -36,6 +36,7 @@ A Phrase is a group of words surrounded by double quotes such as "hello dolly".
 Searching for hello dolly without quotes will search for terms matching hello AND terms matching dolly in the index i.e. hello my name is dolly would be a match but hello my name is amanda or my name is dolly would not be a match. To force them to be searched together as a phrase double quotes are required. By default Razuna uses an AND operator between keywords. So searching for hello dolly is equivalent to searching for hello AND dolly. You can override this be adding your own operator e.g. hello OR dolly which will search for terms matching either hello OR dolly i.e. hello my name is amanda or . Note that the operator must be capital case.
 ___
 **Field Search**
+
 Razuna supports fielded data search. When performing a search you can either specify a field, or Razuna searches in the default fields (see above).
 
 You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.
