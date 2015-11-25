@@ -42,7 +42,7 @@ Go to the Update script page with the following URL: http://(domain)/(razuna)/ex
 
 On the Update script page click on the "Update Database" Button to update your Razuna 1.3.5 database.
 
-![](/installation/img/update-1.png)
+![](/upgrade/img/update-1.png)
 
 **Create the Export file**
 
@@ -50,7 +50,7 @@ Now that your database is updated you can export your data. This script will cre
 
 Click on the "Create Backup file" Button. A new window will open and show the process of your backup. At the end of the process you can then either click on the link to download the Backup file to your desktop. The backup file will be also available in the "backup" directory of the "export" directory. This is the file that we will be using for importing to Razuna 1.4.
 
-![](/installation/img/update-2.png)
+![](/upgrade/img/update-2.png)
 
 You can now safely close your browser and shut down the Razuna server.
 
@@ -80,33 +80,33 @@ Razuna 1.4 features a new firsttime wizard. With it, you can choose your setup, 
 
 When you are at the firttime wizard page you should select "Custom Installation". The custom installation allows you to choose your database and import your backup file.
 
-![](/installation/img/ftw-1.png)
+![](/upgrade/img/ftw-1.png)
 
 **Choose database setup**
 
 In this step you have the option to install Razuna to your preferred database. You can either use the embedded database, MySQL, MS SQL, Oracle or DB2. If you are **not** using the embedded database then please make sure that you followed our database guide for Razuna ([Connecting Razuna to a database](/db_connect/)) **before** you continue. Once you made your choice, click on continue.
 
-![](/installation/img/ftw-2.png)
+![](/upgrade/img/ftw-2.png)
 
 **Choose to import file**
 
 In this step you either have the option to continue with a new database setup or import your backup file. Obviously, we want to continue with importing our backup file.
 
-![](/installation/img/ftw-3.png)
+![](/upgrade/img/ftw-3.png)
 
 **Select backup file and import**
 
 Here you can either upload your backup file or if you placed it in the Razuna 1.4 admin/backup directory it will show in the list below. Either way, once your backup file is available you can click on import. This will open a new window and will show you the progress of the import. Please be patient for larger datasets, since it can take some time to import.
 
-![](/installation/img/ftw-4.png)
+![](/upgrade/img/ftw-4.png)
 
 After clicking the "Import" Button a new window will show you the progress of the import. If all goes well, you can see the success message at the bottom of the window. close it when done successfully.
 
-![](/installation/img/ftw-5.png)
+![](/upgrade/img/ftw-5.png)
 
 After everything has been imported you should click on the "Razuna link" for being redirected to the usual Razuna login.
 
-![](/installation/img/ftw-6.png)
+![](/upgrade/img/ftw-6.png)
 
 ___
 
@@ -120,7 +120,7 @@ Log in to the Razuna Administration and navigate on the left side to the Menu "C
 
 This will re-create your hosts folders and apply the latest updates. If you have made customization to any of those host folders in Razuna 1.3.5 you will need to copy over those changes to the new host folder. (Note: They are all called "raz(ID)" now! Where (ID) is the ID of the host which you can see in the host overview)
 
-![](/installation/img/updatehosts.png)
+![](/upgrade/img/updatehosts.png)
 
 ___
 
