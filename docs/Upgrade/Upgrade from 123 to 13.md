@@ -55,7 +55,7 @@ This only applies to users who are using Oracle or MySQL with Razuna!
 
 Previously, if you are using your own database, such as Oracle or MySQL, you had to change the config.xml file. With Razuna 1.3 this is no longer needed as we are providing a user interface within the Razuna Administration for this. The update procedure (as described above) moved all your settings to an internal database. Please check that those settings are still in place and configure for your own environment. Navigate to the Razuna Administration and go to the new menu "System Settings". Especially, check the "Storage" and the "Database Settings".
 
-![](/installation/img/admin.png)
+![](/upgrade/img/admin.png)
 
 ___
 

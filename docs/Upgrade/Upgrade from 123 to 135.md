@@ -2,7 +2,7 @@
 
 > *You can only update from Razuna 1.2.3 to Razuna 1.3.5!*
 
-> *Please read the [Update to 1.3 document](/installation/Upgrade/Upgrade from 123 to 13/), since it contains important notes regarding updating from 1.2.3 to a 1.3.x version!*
+> *Please read the [Update to 1.3 document](/Upgrade/Upgrade from 123 to 13/), since it contains important notes regarding updating from 1.2.3 to a 1.3.x version!*
 
 ___
 

@@ -81,7 +81,7 @@ Using the backup option you can create a storage point for restoring into your n
 
 Within the "Backup & Restore" tab you will then have the option to backup you Razuna server. Click on the "Backup" Button to conduct a backup.
 
-![](/installation/img/Razuna_-_backup.jpg)
+![](/upgrade/img/Razuna_-_backup.jpg)
 
 By clicking on Backup a new window will open showing you the progress of the backup.
 
@@ -157,14 +157,14 @@ ___
 
 **Version Upgrades up until version 1.4**
 
- * [Upgrade from 1.3.5 to 1.4](/installation/upgrade/Upgrade from 135 to 14/)
- * [Upgrade from 1.2.3 to 1.3.5](/installation/upgrade/Upgrade from 123 to 135/)
- * [Upgrade from 1.2.3 to 1.3](/installation/upgrade/Upgrade from 123 to 13/)
- * [Upgrade from 1.2.2 to 1.2.3](/installation/upgrade/Upgrade from 122 to 123/)
- * [Upgrade from 1.2.1 to 1.2.2](/installation/upgrade/Upgrade from 121 to 122/)
- * [Upgrade from 1.2 to 1.2.1](/installation/upgrade/Upgrade from 12 to 121/)
- * [Upgrade from 1.1.4 to 1.2](/installation/upgrade/Upgrade from 114 to 12/)
- * [Upgrade from 1.1.3 to 1.1.4](/installation/upgrade/Upgrade from 113 to 114/)
+ * [Upgrade from 1.3.5 to 1.4](/upgrade/Upgrade from 135 to 14/)
+ * [Upgrade from 1.2.3 to 1.3.5](/upgrade/Upgrade from 123 to 135/)
+ * [Upgrade from 1.2.3 to 1.3](/upgrade/Upgrade from 123 to 13/)
+ * [Upgrade from 1.2.2 to 1.2.3](/upgrade/Upgrade from 122 to 123/)
+ * [Upgrade from 1.2.1 to 1.2.2](/upgrade/Upgrade from 121 to 122/)
+ * [Upgrade from 1.2 to 1.2.1](/upgrade/Upgrade from 12 to 121/)
+ * [Upgrade from 1.1.4 to 1.2](/upgrade/Upgrade from 114 to 12/)
+ * [Upgrade from 1.1.3 to 1.1.4](/upgrade/Upgrade from 113 to 114/)
 
 
 
