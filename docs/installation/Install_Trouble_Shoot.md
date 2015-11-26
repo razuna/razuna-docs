@@ -15,20 +15,20 @@ ___
 
 The following steps should help you pinpoint the problem why Images and Videos don't show within Razuna.
 
-1. Check that ImageMagick works
+* Check that ImageMagick works
 Upload an image to Razuna and then check the directory "/razuna/demo/dam/incoming" for any folders (you can remove all folders first in order to see the new folder). If there is the image and a xxx_thumb.jpg file AND you can view the thumb file in the image viewer then it works.
 
-2. Check your asset path
+* Check your asset path
 The new image from above should haven been moved to the "/razuna/assets" folder. Check in that folder that the image is really there. If this is your test system and you only have one host your structure will be something like "/razuna/assets/1(hostid)/3(folderid)/img/(imageid)".
 
 If the image and thumb is in the assets path then let's check the settings in Razuna.
 
-3. Check settings in Razuna
+* Check settings in Razuna
 Go to the Razuna Administration (http://localhost:8080/razuna/admin) and then to Settings/Global Settings. In the DAM tab check that the path to the assets folder is set correctly.
 
 If the path is correct, but images still don't show, continue...
 
-4. Check that the context path exists
+* Check that the context path exists
 Open the file server.xml, which can be found in "/tomcat/conf/". Scroll all the way to the bottom and check that the localhost contains the line:
 
 ```
@@ -54,3 +54,5 @@ ___
 **Problem with connecting to MS SQL database**
 
 By default MS SQL database does **not** allow connections over TCP/IP. Select the network properties of the MS SQL Server and enable it in order for Razuna to connect to it properly.
+
+
