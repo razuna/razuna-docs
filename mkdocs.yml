@@ -29,3 +29,4 @@ pages:
   - White-Labelling : 'admin/White-Labelling.md'
   - Indexing : 'admin/Indexing.md'
   - Backup & Restore or migrate from one database to another : 'admin/backup_restore.md'
+  - Razuna Rendering Farm : 'admin/Render_Farm.md'
