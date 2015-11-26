@@ -19,4 +19,5 @@ pages:
   - Use front-end server: 'installation/nginxapache.md'
   - Installing the Search Server : 'installation/Search_Server.md'
   - Installing a Razuna Rendering Server : 'installation/Render_Server.md'
+  - Installation Trouble-Shooting : 'installation/Install_Trouble_Shoot.md'
 
