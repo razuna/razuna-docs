@@ -30,3 +30,7 @@ pages:
   - Indexing : 'admin/Indexing.md'
   - Backup & Restore or migrate from one database to another : 'admin/backup_restore.md'
   - Razuna Rendering Farm : 'admin/Render_Farm.md'
+  - Activate hosts with new settings : 'admin/Activate_hosts.md'
+  - Tenant Customization : 'admin/Tenant_Customize.md'
+  - Enable social network login : 'admin/Social_Login.md'
+  - Cloud Storage : 'admin/Cloud_Storage.md'
