@@ -7,28 +7,17 @@ markdown_extensions:
     - toc
 pages: 
 - Home : 'index.md'
-- Gettin Started with Razuna:
-  - Quick Start: 'start/quickstart.md'
-  - Terminology: 'start/terminology.md'
-  - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
+- Razuna FAQ :
+  - Installation FAQ : 'Razuna_FAQ/index_installation_FAQ.md'
+  - Adjusting Memory Settings for Tomcat : 'Razuna_FAQ/Adjust_memory.md'
+  - Configure Tomcat for production deployment : 'Razuna_FAQ/Config_Tomcat.md'
+  - How to move the asset directory to another drive : 'Razuna_FAQ/How_to_move_asset.md'
+  - How to serve the DAM folder as its own web root : 'Razuna_FAQ/How_to_serve_DAM.md'
+  - Monitoring Razuna (CF Server) with Nagios : 'Razuna_FAQ/Monitoring_Razuna.md'
+  - Razuna with Apache 2.x as a front end server : 'Razuna_FAQ/Razuna_Apache2.md'
+  - Razuna with Nginx as a front end server : 'Razuna_FAQ/Razuna_Nginx.md'
+  - Running Razuna on a different port : 'Razuna_FAQ/Razuna_differ_port.md'
+  - Single-Sign On Option : 'Razuna_FAQ/Single_Signon_option.md'
 
-
+- Oracle FAQ :
+  - How to unlock the ORDSYS account : 'Razuna_FAQ/How_to_unlock_ORDSYS.md'
