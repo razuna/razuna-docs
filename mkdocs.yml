@@ -11,24 +11,14 @@ pages:
   - Quick Start: 'start/quickstart.md'
   - Terminology: 'start/terminology.md'
   - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
-
+- Razuna Tools :
+  - Over view : 'Razuna_tools/index.md'
+  - Razuna Wordpress Plugin : 'Razuna_tools/Wordpress_plugin.md'
+  - Razuna Chrome Extension : 'Razuna_tools/Chrome_Extension.md'
+  - Razuna mobile optimised pages : 'Razuna_tools/Mobile_optimised.md'
+  - Razuna Desktop : 'Razuna_tools/Razuna_desktop.md'
+  - The Desktop File Restorer : 'Razuna_tools/Desktop_file_restorer.md'
+  - Razuna Extension for Magento : 'Razuna_tools/Extension_for_Magento.md'
+ 
+ 
 
