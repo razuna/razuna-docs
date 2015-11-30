@@ -7,28 +7,10 @@ markdown_extensions:
     - toc
 pages: 
 - Home : 'index.md'
-- Gettin Started with Razuna:
-  - Quick Start: 'start/quickstart.md'
-  - Terminology: 'start/terminology.md'
-  - Architecture: 'start/architecture.md'
-- Install Guide:
-  - Overview: 'installation/index.md'
-  - Requirements: 'installation/requirement.md'
-  - Linux: 'installation/linux.md'
-  - Windows: 'installation/windows.md'
-  - MacOs X: 'installation/macosx.md'
-  - Deploy on Virtual Machines: 'installation/vms.md'
-  - Deploy on AWS (Amazon): 'installation/aws.md'
-  - Use front-end server: 'installation/nginxapache.md'
-  - Upgrade Razuna: 'installation/upgrade.md'
-- User Guide : 'user/index.md'
-- Admin Guide: 
-  - Setting up Users : 'admin/users.md'
-- Developer Guide:
-  - API Guide : 'api/index.md'
-  - Plugin Guide : 'plugins/index.md'
-- About:
-  - About: 'about/index.md'
-  - License: 'about/license.md'
-
+- Admin Backend Guide: 
+  - Backup & Restore or migrate from one database to another : 'Admin_Backend/Backup_Restore.md'
+  - Tenant Customization : 'Admin_Backend/Tenant_Customize.md'
+  - Activate hosts with new settings : 'Admin_Backend/Activate_hosts.md'
+  - Cloud Storage : 'Admin_Backend/Cloud_Storage.md'
+  - Razuna Rendering Farm : 'Admin_Backend/Render_Farm.md'
 

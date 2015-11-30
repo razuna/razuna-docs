@@ -10,11 +10,11 @@ ___
 
 With the Akamai cloud storage selected all your files will be stored on the Akamai NetStorage. In order to activate Akamai simply select the Akamai option from the cloud storage provider list and additionally enter the Security Token (give to you by Akamai).
 
-![](/admin/img/Akamai_1.png)
+![](/Admin_Backend/img/Akamai_1.png)
 
 Once done, you have to configure the URL and paths for each file type in the Tenant Settings.
 
-![](/admin/img/Akamai_2.png)
+![](/Admin_Backend/img/Akamai_2.png)
 
 Make sure to enter the full URL for the Akamai endpoint. Also, enter the dedicated path for each file type, e.g. for images "/images/", etc.
 
@@ -26,11 +26,11 @@ ___
 
  In order to activate AWS or Eucalyptus cloud storage simply select the option from the cloud storage provider list and additionally enter the relevant Security Tokens provided to you by the cloud storage provider.
 
-![](/admin/img/AWS_Eucalyptus-1.jpg)
+![](/Admin_Backend/img/AWS_Eucalyptus-1.jpg)
 
 Once done, you have to configure the bucket in the Tenant Settings and you are done. All assets will now be stored in designated bucket for the tenant.
 
-![](/admin/img/AWS_Tenant_Setting.jpg)
+![](/Admin_Backend/img/AWS_Tenant_Setting.jpg)
 
 
 

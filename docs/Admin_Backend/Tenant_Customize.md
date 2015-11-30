@@ -14,11 +14,11 @@ ___
 
 **show top part**
 
-![](/admin/img/razuna-top.jpg)
+![](/Admin_Backend/img/razuna-top.jpg)
 
 **show bottom part**
 
-![](/admin/img/razuna-bottom.jpg)
+![](/Admin_Backend/img/razuna-bottom.jpg)
 
 If you set both of the above parameters to "hide" you will be left with a design of only the middle main section of Razuna. This might come in handy if you simply want to include Razuna in another application via iFrame.
 
@@ -26,7 +26,7 @@ If you set both of the above parameters to "hide" you will be left with a design
 
 In case, you would hide the upper and bottom part Razuna would then be displayed like this (sample screen shot taken from Razuna 1.5):
 
-![](/admin/img/razuna-middle.jpg)
+![](/Admin_Backend/img/razuna-middle.jpg)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 These settings apply to the explorer on the left side within Razuna as displayed below:
 
-![](/admin/img/razuna-explorer.jpg)
+![](/Admin_Backend/img/razuna-explorer.jpg)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 The above "TAB_" parameters apply to all tabs in all folder views, e.g the above "ICON_" parameters apply to the list of icons within all folder views. NOTE: The Tabs: "Folder Properties", "Sharing", and "Widgets" are shown to groups within permissions only. The tab "Content of this folder" is always shown as it contains all assets in this folder and is the entry point of any folder for the users.
 
-![](/admin/img/razuna-folder-view.jpg)
+![](/Admin_Backend/img/razuna-folder-view.jpg)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 The above "TABS_" parameter apply to all asset types as do the "BUTTON_"parameters as show below:
 
-![](/admin/img/razuna-assetview.jpg)
+![](/Admin_Backend/img/razuna-assetview.jpg)
 
 ___
 

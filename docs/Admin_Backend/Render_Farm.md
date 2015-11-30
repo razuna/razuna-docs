@@ -16,7 +16,7 @@ ___
 
 **Global Rendering Farm Settings**
 
-![](/admin/img/rfs-features.jpg)
+![](/Admin_Backend/img/rfs-features.jpg)
 
 **Enable/Disable**
 When you have setup at least one rendering server and verified that Razuna can reach the server, then enable the rendering farm with this switch. Caution: This option is applied immediately!
@@ -30,7 +30,7 @@ ___
 
 Each rendering server comes with its own settings as each rendering server will exchange data with this Razuna installation. You can add as many rendering servers as you need.
 
-![](/admin/img/rfs-1.jpg)
+![](/Admin_Backend/img/rfs-1.jpg)
 
 **Activate**
 Enable or disable this rendering server.
@@ -43,7 +43,7 @@ Enter the name of your location here. This value should be in line with the defa
 
 Click on the "Tools" tab to enter the paths to your libraries.
 
-![](/admin/img/rfs-2.jpg)
+![](/Admin_Backend/img/rfs-2.jpg)
 
 As mentioned in the "[Installing a Razuna Rendering Server](/installation/Render_Sever/)" guide, you need to install the additional libraries. Enter here the absolute paths to these libraries. Please double check the paths to the libraries!
 

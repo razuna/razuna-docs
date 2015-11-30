@@ -14,7 +14,7 @@ In order to backup your complete Razuna database and all settings you have to na
 
 Within the "Backup & Restore" tab you will then have the option to backup you Razuna server. Click on the "Backup" Button to conduct a backup. 
 
-![](/admin/img/Backup.jpg)
+![](/Admin_Backend/img/Backup.jpg)
 
 This will backup your whole database to a internal database which you can then use to import with the Restore option.
 
@@ -26,7 +26,7 @@ In case something is wrong with your Razuna Server or you migrated to a new one 
 
 The current restore points are listed, with the latest restore point first. Click on the Restore link in order to restore to this point.
 
-![](/admin/img/Restore.jpg)
+![](/Admin_Backend/img/Restore.jpg)
 
 After the restore you might have to rebuild the search index of each host in order to avoid finding assets that are not in the current restore point. Also, you should check the "Log" directory of Razuna (located at "razuna/WEB-INF/bluedragon/work/cflog"). You will find a log file with the current date and time stamp. Errors with duplicate key or alike can be ignored!
 
