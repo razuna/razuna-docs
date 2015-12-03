@@ -282,4 +282,3 @@ Helper methods to get and set the session token.
 
 	
 
-|
