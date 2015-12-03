@@ -15,7 +15,7 @@ ___
 URL and parameters to use:
 
 ```
-[http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=folder&access=r&fileid=108](http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=folder&access=r&fileid=108)
+http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=folder&access=r&fileid=108
 ```
 
 Parameters
@@ -44,7 +44,7 @@ ___
 URL and parameters to use:
 
 ```
-[http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=upload](http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=upload)
+http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&folderid=(folderid)&showpart=upload
 ```
 
 Parameters
@@ -69,7 +69,7 @@ ___
 URL and parameters to use (Example):
 
 ```
-[http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&searchfor=audrey&show=all&access=r&showpart=search](http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&searchfor=audrey&show=)
+http://localhost/(razuna/)raz1/dam/index.cfm?fa=c.view_custom&api_key=(apikey)&searchfor=audrey&show=all&access=r&showpart=search
 ```
 
 Parameters
