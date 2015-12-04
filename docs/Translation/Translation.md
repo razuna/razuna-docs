@@ -1,4 +1,4 @@
-**Translations**
+﻿**Translations**
 
 > **Razuna 1.6** : As of Razuna 1.6 we have changed the translation system.
 
@@ -79,19 +79,19 @@ ___
 **How to start translating**
 
     
-**Grab the latest English.xml file**
+**1. Grab the latest English.xml file**
 
   Best is to get it from the Subversion (SVN) repository. Thus when we do changes those will be reflected in the SVN. Read over at the Subversion Guide how to access Razuna on SVN. The main thing for you to know is that the translation files reside in the "trunk" folder under the demo host (demo/dam/translations). If you don't feel comfortable with SVN access then let us know and we will send you the XML by another way.
     
-**Create your own XML file**
+**2. Create your own XML file**
     
   Open the english.xml file and copy it to your preferred language. Say you want to create a Italian translation you would copy the english.xml to italian.xml.
     
-**Change the ID**
+**3. Change the ID**
 
   Each translation has its own ID. You will need to change this ID! Incrementing it by one with the below list. Look at the below list to see what ID's are taken and add your own translation and ID.
     
-**Let us know**
+**4. Let us know**
 
   Once you started add your status in the below table (yes, you can edit it) and let us know that you work on it. Of course, we would totally appreciate if you would send us a copy of your file. We will give you praise and mention your name wherever we can (smile) 
 
@@ -116,7 +116,7 @@ ___
 **Important**
 
 ```
-<![CDATA[Deconnexion]]>
+<![CDATA[Déconnexion]]>
 ```
 
 Without wrapping this French word in CDATA the parsing of this XML file would fail, since the parser does not know French or foreign characters. The same applies if you would like to add HTML code in your translation. In short, you have to wrap all text with a CDATA when it would contain HTML or foreign characters.
