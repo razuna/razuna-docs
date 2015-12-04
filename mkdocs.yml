@@ -34,3 +34,4 @@ pages:
   - Tenant Customization : 'admin/Tenant_Customize.md'
   - Enable social network login : 'admin/Social_Login.md'
   - Cloud Storage : 'admin/Cloud_Storage.md'
+  - Universal Product Code : 'admin/UPC.md'
