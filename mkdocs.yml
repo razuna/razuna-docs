@@ -13,4 +13,7 @@ pages:
   - Architecture: 'start/architecture.md'
   - The "My Folder": 'start/My Folder.md'
   - Batch Upload: 'start/Batch upload.md'
-  
+  - Search and Find Assets: 'start/Search_Find_Assets.md'
+  - Link to existing content: 'start/Link_to_existing_content.md'
+- Sharing Assets :
+  - Use Widgets: 'start/Use_Widget.md' 
