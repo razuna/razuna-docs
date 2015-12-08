@@ -108,3 +108,4 @@ pages:
   - Migrate between databases : 'db_connect/Migrate databases.md'
 
 
+- How to show dedicated Razuna UI parts in your application : 'How/How_to_show_dedicated_Razuna_UI_parts.md'
