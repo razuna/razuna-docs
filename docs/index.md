@@ -4,3 +4,4 @@ This is the documentation for the [popular open source Digital Asset Managment S
 
 ## Here should be a list of the main sections
 
+Please see the [project license](about/license.md) for further details.
