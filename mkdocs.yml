@@ -40,6 +40,28 @@ pages:
   - Razuna with Nginx as a front end server : 'Razuna_FAQ/Razuna_Nginx.md'
   - Running Razuna on a different port : 'Razuna_FAQ/Razuna_differ_port.md'
   - Single-Sign On Option : 'Razuna_FAQ/Single_Signon_option.md'
+- Razuna Release Notes :
+     - Over view : 'Release_Notes/index.md'
+     - Razuna 1.7.5 : 'Release_Notes/Razuna 1.7.5.md'
+     - Razuna 1.7 : 'Release_Notes/Razuna 1.7.md'
+     - Razuna 1.6.5 : 'Release_Notes/Razuna 1.6.5.md'
+     - Razuna 1.6.2 : 'Release_Notes/Razuna 1.6.2.md'
+     - Razuna 1.6.1 : 'Release_Notes/Razuna 1.6.1.md'
+     - Razuna 1.6 : 'Release_Notes/Razuna 1.6.md'
+     - Razuna 1.5.2 : 'Release_Notes/Razuna 1.5.2.md'
+     - Razuna 1.5.1 : 'Release_Notes/Razuna 1.5.1.md'
+     - Razuna 1.5 : 'Release_Notes/Razuna 1.5.md'
+     - Razuna 1.4.7 : 'Release_Notes/Razuna 1.4.7.md'
+     - Razuna 1.4.6 : 'Release_Notes/Razuna 1.4.6.md'
+     - Razuna 1.4.5 : 'Release_Notes/Razuna 1.4.5.md'
+     - Razuna 1.4.4 : 'Release_Notes/Razuna 1.4.4.md'
+     - Razuna 1.4.3 : 'Release_Notes/Razuna 1.4.3.md'
+     - Razuna 1.4.2 : 'Release_Notes/Razuna 1.4.2.md'
+     - Razuna 1.4.1 : 'Release_Notes/Razuna 1.4.1.md'
+     - Razuna 1.4 : 'Release_Notes/Razuna 1.4.md'
+- About:
+  - About: 'about/index.md'
+  - License: 'about/license.md'
 
 - Oracle FAQ :
   - How to unlock the ORDSYS account : 'Razuna_FAQ/How_to_unlock_ORDSYS.md'- Razuna PHP Library (Version 1) : 'PHP Library/PHP_Lib.md'
