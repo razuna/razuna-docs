@@ -25,3 +25,9 @@ pages:
   - Installing a Razuna Rendering Server : 'installation/Render_Server.md'
   - Installation Trouble-Shooting : 'installation/Install_Trouble_Shoot.md'
   - Advanced Topics : 'installation/Advanced_Topic.md'
+- Plugin Guide : 
+  - Over view : 'plugins/index.md'
+  - Plugin API : 'plugins/Plugin API.md'
+  - Plugin Hooks : 'plugins/Plugin Hooks.md'
+
+
