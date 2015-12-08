@@ -1,4 +1,4 @@
-# Welcome to the offical Razuna Documentation
+# Welcome to the offical Razuna 1.8 Documentation
 
 This is the documentation for the [popular open source Digital Asset Managment System Razuna](http://razuna.org).
 
