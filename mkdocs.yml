@@ -12,7 +12,7 @@ pages:
   - Terminology: 'start/terminology.md'
   - Architecture: 'start/architecture.md'
 - Admin Guide :
-  - Users & Groups : 'Admin 2.0/Users&Groups.md'
+  - Users & Groups : 'Admin_2.0/Users&Groups.md'
 - Install Guide:
   - Overview: 'installation/index.md'
   - Requirements: 'installation/requirement.md'
