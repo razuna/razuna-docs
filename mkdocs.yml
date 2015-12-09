@@ -13,6 +13,7 @@ pages:
   - Architecture: 'start/architecture.md'
 - Admin Guide :
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
+  - Labels & Folders : 'Admin_2.0/Labels&Folders.md'
 - Install Guide:
   - Overview: 'installation/index.md'
   - Requirements: 'installation/requirement.md'
