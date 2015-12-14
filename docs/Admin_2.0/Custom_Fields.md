@@ -18,7 +18,7 @@ ___
 
 **Edit custom fields**
 
-The "Custom Fields" in Razuna 2.0 are editable. So , to edit the current "**Custom Fields**" , from the main screen of "**Custom Fields**" Settings. User can edit directly by click into any custom fields are showing in the list.
+The "Custom Fields" in Razuna 2.0 are editable. So , to edit the current "**Custom Fields**" , from the main screen of "**Custom Fields**" Settings. User can edit them directly by click into any custom fields are showing in the list.
 
 The new windows will show the Name , HTML Element and Data Type of the "Custom Field" which you have been clicked to. Then , you can change any data of this field and click **Update** button to save the settings.
 
