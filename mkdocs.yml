@@ -12,10 +12,11 @@ pages:
   - Terminology: 'start/terminology.md'
   - Architecture: 'start/architecture.md'
 - Admin Guide :
+  - General Configuration : 'Admin_2.0/General_Configuration.md'
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
   - Labels & Folders : 'Admin_2.0/Labels&Folders.md'
   - Custom Fields : 'Admin_2.0/Custom_Fields.md'
-  - Templates : 'Admin_2.0/Templates.md'
+  - Templates : 'Admin_2.0/Templates.md'  
 - Install Guide:
   - Overview: 'installation/index.md'
   - Requirements: 'installation/requirement.md'
