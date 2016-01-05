@@ -15,7 +15,7 @@ View templates are used to choose data to configure data to show, store and who 
 
 ![](/Admin_2.0/img/Template_view_add.jpg)
 
-User just define the Name , Folders , choose asset types and extensions to match on to Add then click to "Update" button to finish. 
+User just define the Name , Folders , choose asset types and extensions to match on to Add then click to "Update" button to finish.
 
 
 * To edit a view template , user just click into template which you want to edit then new windows will show on your screen to allow you edit it as image below :
@@ -63,6 +63,25 @@ ___
 ___
 
 **Import & Export**
+
+**Import Templates**
+
+With Import Templates you map your own import fields to the available fields in Razuna. You can add or modify them any time and will be applied when your users import metadata to assets.
+
+Metadata can be extracted from spreedsheet files: CSV.
+
+
+![](/Admin_2.0/img/import_temp1.png)
+
+* To add new Import Template, please click into "Add Import Template" button, the new form will appear to allow you define the new template as below:
+
+![](/Admin_2.0/img/import_temp2.png)
+
+As image above, you can see an import template should has a **Name** (required) and **Description**
+
+**Mapping key** (required) is the key that's used for mapping (by comparing value) between CSV data and Asset field value, it can be any field of asset, but usually *Id* or *File Name*
+
+After that, just add more Mapping Column by click "Add" button, the first input box is the column name in CSV data, and the select box presents one asset field that's matched with that column.
 
 
 ___
