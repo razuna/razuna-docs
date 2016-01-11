@@ -62,8 +62,6 @@ ___
 
 ___
 
-**Import & Export**
-
 **Import Templates**
 
 With Import Templates you map your own import fields to the available fields in Razuna. You can add or modify them any time and will be applied when your users import metadata to assets.
@@ -71,11 +69,11 @@ With Import Templates you map your own import fields to the available fields in 
 Metadata can be extracted from spreedsheet files: CSV.
 
 
-![](/Admin_2.0/img/import_temp1.png)
+![](/Admin_2.0/img/import_temp1.jpg)
 
 * To add new Import Template, please click into "Add Import Template" button, the new form will appear to allow you define the new template as below:
 
-![](/Admin_2.0/img/import_temp2.png)
+![](/Admin_2.0/img/import_temp2.jpg)
 
 As image above, you can see an import template should has a **Name** (required) and **Description**
 
@@ -83,9 +81,19 @@ As image above, you can see an import template should has a **Name** (required) 
 
 After that, just add more Mapping Column by click "Add" button, the first input box is the column name in CSV data, and the select box presents one asset field that's matched with that column.
 
-
 ___
 
+**Export Templates**
+
+With Export Templates, you can define which asset field will be exported.
+
+![](/Admin_2.0/img/export_temp1.jpg)
+
+Select the fields in each category which will be included in the metadata export. If no fields are selected in any of the categories then all fields will be exported.
+
+*Node: By default, field ID will always be exported.*
+
+___
 **Emails**
 
 **Below you will find all customizable email templates. These email templates are being used to send out various system notifications. If there is no context in which to determine an appropriate sender the default from address (set just below) will be used.**
