@@ -5,7 +5,7 @@ repo_name: Github
 markdown_extensions:
     - smarty
     - toc
-pages: 
+pages:
 - Home : 'index.md'
 - Gettin Started with Razuna:
   - Quick Start: 'start/quickstart.md'
@@ -16,7 +16,8 @@ pages:
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
   - Labels & Folders : 'Admin_2.0/Labels&Folders.md'
   - Custom Fields : 'Admin_2.0/Custom_Fields.md'
-  - Templates : 'Admin_2.0/Templates.md'  
+  - Templates : 'Admin_2.0/Templates.md'
+  - Access Control : 'Admin_2.0/AccessControl.md'
 - Install Guide:
   - Overview: 'installation/index.md'
   - Requirements: 'installation/requirement.md'
@@ -31,14 +32,14 @@ pages:
   - Installing a Razuna Rendering Server : 'installation/Render_Server.md'
   - Installation Trouble-Shooting : 'installation/Install_Trouble_Shoot.md'
   - Advanced Topics : 'installation/Advanced_Topic.md'
-- Plugin Guide : 
+- Plugin Guide :
   - Over view : 'plugins/index.md'
   - Plugin API : 'plugins/Plugin API.md'
   - Plugin Hooks : 'plugins/Plugin Hooks.md'
 - Developer Guide:
   - API Guide : 'api/index.md'
   - Plugin Guide : 'plugins/index.md'
-  
+
 - About:
   - About: 'about/index.md'
   - License: 'about/license.md'
@@ -46,4 +47,4 @@ pages:
 - User Guide : 'user/User Guide.md'
 - Translation: 'Translation/Translation.md'
 - Upgrade Razuna: 'Upgrade/index.md'
-   
+
