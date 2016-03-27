@@ -1,5 +1,5 @@
 site_name: Razuna Documentation
-theme: readthedocs
+theme: readthedocshm
 repo_url: https://github.com/razuna/razuna
 repo_name: Github
 markdown_extensions:
