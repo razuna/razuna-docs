@@ -1,5 +1,5 @@
 site_name: Razuna Documentation 2
-theme_dir: readthedocshm
+theme: readthedocs
 repo_url: https://github.com/razuna/razuna
 repo_name: Github
 markdown_extensions:
@@ -11,6 +11,15 @@ pages:
   - Quick Start: 'start/quickstart.md'
   - Terminology: 'start/terminology.md'
   - Architecture: 'start/architecture.md'
+
+- Admin Back-end Guide:
+  - Home : 'Admin_backend_2.0/Home.md'
+  - Hosts : 'Admin_backend_2.0/Hosts.md'
+  - Users : 'Admin_backend_2.0/Users.md'
+  - Plugins : 'Admin_backend_2.0/Plugins.md'
+  - Settings : 'Admin_backend_2.0/Settings.md'
+  - Status : 'Admin_backend_2.0/Status.md'
+
 - Administration Guide :
   - General Configuration : 'Admin_2.0/General_Configuration.md'
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
