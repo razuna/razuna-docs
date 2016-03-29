@@ -11,7 +11,7 @@ pages:
   - Quick Start: 'start/quickstart.md'
   - Terminology: 'start/terminology.md'
   - Architecture: 'start/architecture.md'
-- Admin Guide :
+- Administration Guide :
   - General Configuration : 'Admin_2.0/General_Configuration.md'
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
   - Labels & Folders : 'Admin_2.0/Labels&Folders.md'
