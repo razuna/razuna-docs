@@ -17,6 +17,7 @@ pages:
   - Hosts : 'Admin_backen_2.0/Hosts.md'
   - Users : 'Admin_backen_2.0/Users.md'
   - Plugins : 'Admin_backen_2.0/Plugins.md'
+  - Ducky : 'Admin_backen_2.0/Ducky.md'
   - Settings : 'Admin_backen_2.0/Settings.md'
   - Status : 'Admin_backen_2.0/Status.md'
 
@@ -25,7 +26,8 @@ pages:
   - Users & Groups : 'Admin_2.0/Users&Groups.md'
   - Labels & Folders : 'Admin_2.0/Labels&Folders.md'
   - Custom Fields : 'Admin_2.0/Custom_Fields.md'
-  - Templates : 'Admin_2.0/Templates.md'  
+  - Templates : 'Admin_2.0/Templates.md'
+  - Maintenance : 'Admin_2.0/Maintenance.md'
 - Install Guide:
   - Overview: 'installation/index.md'
   - Requirements: 'installation/requirement.md'

@@ -4,7 +4,7 @@
 
 Here you will find system wide settings. Host specific settings can be found in the Administration of the host itself. Changes will take effect immediately!
 
-![](/Admin_backen_2.0/img/backen_Settings_GC.png)
+![](/Admin_backen_2.0/img/GC_1_backend.png)
 
 ___
 
@@ -18,8 +18,11 @@ Razuna uses different third party libraries for creating thumbnails, converting 
 
 ___
 
-**Backup & Restore**
+**Emails / SMTP Settings**
 
+Configure your SMTP server below. This is being used every time you send out an email from within Razuna.
+
+![](/Admin_backen_2.0/img/Email_smtp_settings_backend.png)
 ___
 
 **File Types**
